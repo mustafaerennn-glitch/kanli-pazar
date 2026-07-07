@@ -263,7 +263,7 @@ a.kp-nav-brand:hover .kp-nav-logo{color:#BA7517}
 .kp-onsoz-tab:hover:not(.active){color:#1a1a1a}
 .kp-onsoz-tab-badge{display:inline-block;font-size:9px;background:#BA7517;color:#fff;border-radius:2px;padding:1px 5px;margin-left:6px;vertical-align:middle;font-weight:700;letter-spacing:0.3px}
 .kp-search-trigger{position:relative;display:flex;align-items:center;cursor:pointer;border-left:1px solid #e0ddd8;padding:0 7px 0 17px;color:#888;transition:color 0.2s}
-.kp-search-dropdown{display:none;position:fixed;top:35px;right:24px;z-index:99999;width:400px}
+.kp-search-dropdown{display:none;position:fixed;top:72px;right:24px;z-index:99999;width:400px}
 .kp-search-dropdown.kp-search-open{display:block}
 .kp-search-row{display:flex;align-items:stretch;background:transparent;border-left:5px solid #BA7517;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
 .kp-search-input{flex:1;border:none;background:transparent;padding:8px 16px !important;font-size:15px !important;font-family:Georgia,serif;font-style:italic;color:#c4a06a;outline:none;min-width:0}
