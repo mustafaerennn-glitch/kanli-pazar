@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arama | Kanlı Pazar</title>
+<meta name="description" content="Kanlı Pazar statik sitesinde kitap bölümleri, ekler ve kaynaklar içinde arama yapın.">
+<link rel="canonical" href="https://kanlipazar.net/arama/">
+<link rel="alternate" hreflang="tr" href="https://kanlipazar.net/arama/">
+<link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/arama/">
+<link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/arama/">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="kp-bolum-page">
+
+<!-- NAV -->
+<div class="kp-nav">
+  <a href="/" class="kp-nav-brand" style="text-decoration:none;">
+  <span class="kp-nav-logo">Kanlı Pazar</span>
+  <span class="kp-nav-sub">Mustafa Eren — Yaşayan yayın</span>
+</a>
+  <div class="kp-nav-links">
+    <a href="/kitap/" class="kp-nl">Kitap</a>
+    <a href="/medya/" class="kp-nl">Medya</a>
+    <a href="/guncellemeler/" class="kp-nl">Güncel</a>
+    <a href="/gorusler/" class="kp-nl">Görüşler</a>
+    <a href="/kaynakca/" class="kp-nl">Kaynakça</a>
+    <a href="/iletisim/" class="kp-nl">İletişim</a>
+    <div class="kp-search-trigger" id="kpSearchTrigger">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <div class="kp-search-dropdown" id="kpSearchDropdown">
+        <div class="kp-search-row">
+          <input type="text" id="kpSearchInput" class="kp-search-input" placeholder="Sitede ara..." autocomplete="off">
+          <button class="kp-search-btn" id="kpSearchBtn">Ara →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BREADCRUMB -->
+<div class="kp-ch-bar">
+  <a href="/">Ana sayfa</a>
+  <span>›</span>
+  <span class="kp-ch-current">Arama</span>
+</div>
+
+<!-- ANA LAYOUT -->
+<div class="kp-bolum-layout">
+
+  <!-- SOL SÜTUN -->
+  <div class="kp-bolum-main">
+
+    <span class="kp-ch-badge">Arama</span>
+    <h1 class="kp-ch-title">Kitapta Ara</h1>
+    <div class="kp-ch-rule"></div>
+
+    <!-- ARAMA KUTUSU -->
+    <div style="display:flex;gap:8px;margin:24px 0 32px;">
+      <input
+        id="kp-search-input"
+        type="text"
+        placeholder="Bir isim, yer veya kavram yazın…"
+        style="flex:1;padding:12px 16px;font-size:15px;font-family:Georgia,serif;border:1px solid #e0e0e0;border-radius:6px;outline:none;color:#1a1a1a;"
+      />
+      <button
+        id="kp-search-btn"
+        style="padding:12px 20px;background:#BA7517;color:#fff;border:none;border-radius:6px;font-size:14px;font-family:Arial,sans-serif;cursor:pointer;"
+      >Ara</button>
+    </div>
+
+    <!-- SONUÇLAR -->
+    <div id="kp-search-results"></div>
+
+  </div><!-- /.kp-bolum-main -->
+
+  <!-- SAĞ SIDEBAR -->
+  <div class="kp-bolum-sidebar">
+    <div class="kp-sb-card">
+      <div class="kp-sb-title">KİTAP BÖLÜMLERİ</div>
+      <a href="/onsoz/" class="kp-ch-list-item">
+        <span class="kp-ch-list-badge">Önsöz</span>
+        <span class="kp-ch-list-title">Önsöz</span>
+      </a>
+      <a href="/giris/" class="kp-ch-list-item">
+        <span class="kp-ch-list-badge">Giriş</span>
+        <span class="kp-ch-list-title">16 Şubat 1969'a Giden Yol</span>
+      </a>
+      <a href="/bolum-1/" class="kp-ch-list-item">
+        <span class="kp-ch-list-badge">Böl. 1</span>
+        <span class="kp-ch-list-title">27 Mayıs 1960 Sonrası Politik Ortam</span>
+      </a>
+      <a href="/bolum-2/" class="kp-ch-list-item">
+        <span class="kp-ch-list-badge">Böl. 2</span>
+        <span class="kp-ch-list-title">Kanlı Pazar'a Doğru</span>
+      </a>
+      <a href="/bolum-3/" class="kp-ch-list-item">
+        <span class="kp-ch-list-badge">Böl. 3</span>
+        <span class="kp-ch-list-title"><em>Bugün</em> Gazetesi ve "Kanlı Pazar"</span>
+      </a>
+      <a href="/bolum-4/" class="kp-ch-list-item">
+        <span class="kp-ch-list-badge" style="background:#BA751711;color:#BA7517;">Odak</span>
+        <span class="kp-ch-list-title">Adım Adım Kanlı Pazar</span>
+      </a>
+      <a href="/bolum-5/" class="kp-ch-list-item">
+        <span class="kp-ch-list-badge">Böl. 5</span>
+        <span class="kp-ch-list-title">Kanlı Pazar'ın Ardından Söylenenler</span>
+      </a>
+      <a href="/bolum-6/" class="kp-ch-list-item">
+        <span class="kp-ch-list-badge">Böl. 6</span>
+        <span class="kp-ch-list-title">Yıllar Sonra Kanlı Pazar</span>
+      </a>
+      <a href="/sonsoz/" class="kp-ch-list-item">
+        <span class="kp-ch-list-badge">Sonsöz</span>
+        <span class="kp-ch-list-title">Sonsöz</span>
+      </a>
+    </div>
+  </div><!-- /.kp-bolum-sidebar -->
+
+</div><!-- /.kp-bolum-layout -->
+
+</div><!-- /.kp-bolum-page -->
+
+<script>
+(function() {
+
+  var KP_SEARCH_PAGES = [
+    { title: 'Önsöz', url: '/onsoz/' },
+    { title: 'Giriş — 16 Şubat 1969\'a Giden Yol', url: '/giris/' },
+    { title: 'Bölüm 1 — 27 Mayıs 1960 Sonrası Politik Ortam', url: '/bolum-1/' },
+    { title: 'Bölüm 2 — Kanlı Pazar\'a Doğru', url: '/bolum-2/' },
+    { title: 'Bölüm 3 — Bugün Gazetesi ve Kanlı Pazar', url: '/bolum-3/' },
+    { title: 'Bölüm 4 — Adım Adım Kanlı Pazar', url: '/bolum-4/' },
+    { title: 'Bölüm 5 — Kanlı Pazar\'ın Ardından Söylenenler', url: '/bolum-5/' },
+    { title: 'Bölüm 6 — Yıllar Sonra Kanlı Pazar', url: '/bolum-6/' },
+    { title: 'Sonsöz', url: '/sonsoz/' },
+    { title: 'Kaynakça', url: '/kaynakca/' },
+    { title: 'Medya', url: '/medya/' },
+    { title: 'Güncellemeler', url: '/guncellemeler/' },
+    { title: 'Görüşler', url: '/gorusler/' },
+    { title: 'Okuyucu Rehberi', url: '/okuyucu-rehberi/' }
+  ];
+
+  function escapeHTML(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
+
+  function stripHTML(html) {
+    var tmp = document.createElement('div');
+    tmp.innerHTML = html;
+    tmp.querySelectorAll('script, style, nav, .kp-nav, .kp-bolum-sidebar, .kp-citation-block').forEach(function(el) {
+      el.remove();
+    });
+    return tmp.textContent || tmp.innerText || '';
+  }
+
+  function getContentFromHTML(html) {
+    var tmp = document.createElement('div');
+    tmp.innerHTML = html;
+    var main = tmp.querySelector('.kp-bolum-main') || tmp.querySelector('main') || tmp;
+    main.querySelectorAll('script, style, .kp-citation-block').forEach(function(el) {
+      el.remove();
+    });
+    return main.textContent || main.innerText || '';
+  }
+
+  function getAllExcerpts(text, query, contextLen) {
+    contextLen = contextLen || 180;
+    var lower = text.toLocaleLowerCase('tr-TR');
+    var qLower = query.toLocaleLowerCase('tr-TR');
+    var excerpts = [];
+    var matchIndices = [];
+    var searchFrom = 0;
+    var matchNum = 0;
+
+    while (searchFrom < lower.length) {
+      var idx = lower.indexOf(qLower, searchFrom);
+      if (idx === -1) break;
+      matchNum++;
+
+      var start = Math.max(0, idx - contextLen);
+      var end = Math.min(text.length, idx + query.length + contextLen);
+      var snippet = text.slice(start, end).replace(/\s+/g, ' ').trim();
+      var localStart = Math.max(0, idx - start);
+      var localEnd = localStart + query.length;
+
+      var result =
+        escapeHTML(snippet.slice(0, localStart)) +
+        '<strong style="color:#BA7517;">' +
+        escapeHTML(snippet.slice(localStart, localEnd)) +
+        '</strong>' +
+        escapeHTML(snippet.slice(localEnd));
+
+      excerpts.push((start > 0 ? '…' : '') + result + (end < text.length ? '…' : ''));
+      matchIndices.push(matchNum);
+      searchFrom = idx + Math.max(query.length, 1);
+    }
+
+    return { excerpts: excerpts, matchIndices: matchIndices };
+  }
+
+  function renderResults(results, query) {
+    var container = document.getElementById('kp-search-results');
+    if (!results.length) {
+      container.innerHTML = '<p style="color:#888;font-family:Arial,sans-serif;font-size:14px;">"' + escapeHTML(query) + '" için sonuç bulunamadı.</p>';
+      return;
+    }
+
+    var totalMatches = results.reduce(function(sum, r) { return sum + r.excerpts.length; }, 0);
+    var html = '<p style="font-size:13px;color:#888;font-family:Arial,sans-serif;margin-bottom:24px;">' + results.length + ' sayfada ' + totalMatches + ' sonuç bulundu.</p>';
+
+    results.forEach(function(r) {
+      html += '<div style="border:0.5px solid #e0e0e0;border-radius:8px;padding:20px 24px;margin-bottom:16px;">';
+      html += '<a href="' + r.url + '" style="font-size:16px;font-weight:600;color:#1a1a1a;text-decoration:none;font-family:Arial,sans-serif;">' + escapeHTML(r.title) + '</a>';
+      html += '<div style="margin-top:12px;display:flex;flex-direction:column;gap:10px;">';
+
+      r.excerpts.forEach(function(ex, i) {
+        var matchNum = r.matchIndices[i];
+        var pasajLink = r.url + '?highlight=' + encodeURIComponent(query) + '&match=' + matchNum;
+        html += '<div>';
+        html += '<p style="font-size:14px;line-height:1.75;color:#444;font-family:Georgia,serif;border-left:2px solid #BA751733;padding-left:12px;margin:0;">' + ex + '</p>';
+        html += '<div style="text-align:right;margin-top:5px;">';
+        html += '<a href="' + pasajLink + '" target="_blank" rel="noopener noreferrer" style="font-size:12px;color:#BA7517;font-family:Arial,sans-serif;text-decoration:none;border-bottom:1px solid #BA751766;">Bu pasaja git →</a>';
+        html += '</div>';
+        html += '</div>';
+      });
+
+      html += '</div>';
+      html += '</div>';
+    });
+    container.innerHTML = html;
+  }
+
+  function doSearch(query) {
+    if (!query || query.trim().length < 2) return;
+    query = query.trim();
+
+    var container = document.getElementById('kp-search-results');
+    container.innerHTML = '<p style="color:#888;font-family:Arial,sans-serif;font-size:14px;">Aranıyor…</p>';
+
+    var newUrl = window.location.pathname + '?q=' + encodeURIComponent(query);
+    if (window.history && window.history.replaceState) {
+      window.history.replaceState(null, '', newUrl);
+    }
+
+    Promise.all(KP_SEARCH_PAGES.map(function(page) {
+      return fetch(page.url, { cache: 'no-cache' })
+        .then(function(r) {
+          if (!r.ok) throw new Error('HTTP ' + r.status);
+          return r.text();
+        })
+        .then(function(html) {
+          var text = getContentFromHTML(html);
+          var result = getAllExcerpts(text, query);
+          if (result.excerpts.length > 0) {
+            return {
+              title: page.title,
+              url: page.url,
+              excerpts: result.excerpts,
+              matchIndices: result.matchIndices
+            };
+          }
+          return null;
+        })
+        .catch(function() { return null; });
+    })).then(function(results) {
+      renderResults(results.filter(Boolean), query);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var input = document.getElementById('kp-search-input');
+    var btn = document.getElementById('kp-search-btn');
+
+    btn.addEventListener('click', function() {
+      doSearch(input.value);
+    });
+
+    input.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') doSearch(input.value);
+    });
+
+    var urlParams = new URLSearchParams(window.location.search);
+    var sq = urlParams.get('q');
+    if (sq) {
+      input.value = sq;
+      doSearch(sq);
+    }
+  });
+
+})();
+</script>
+
+<script>
+(function() {
+  var trigger = document.getElementById('kpSearchTrigger');
+  var dropdown = document.getElementById('kpSearchDropdown');
+  var input = document.getElementById('kpSearchInput');
+  var btn = document.getElementById('kpSearchBtn');
+
+  if (!trigger) return;
+
+  trigger.addEventListener('click', function(e) {
+    var isOpen = dropdown.classList.contains('kp-search-open');
+    if (isOpen) {
+      dropdown.classList.remove('kp-search-open');
+    } else {
+      dropdown.classList.add('kp-search-open');
+      setTimeout(function() { input.focus(); }, 50);
+    }
+    e.stopPropagation();
+  });
+
+  dropdown.addEventListener('click', function(e) {
+    e.stopPropagation();
+  });
+
+  document.addEventListener('click', function() {
+    dropdown.classList.remove('kp-search-open');
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      dropdown.classList.remove('kp-search-open');
+    }
+  });
+
+  function doTopSearch() {
+    var q = input.value.trim();
+    if (!q) return;
+    window.location.href = '/arama/?q=' + encodeURIComponent(q);
+  }
+
+  btn.addEventListener('click', doTopSearch);
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') doTopSearch();
+  });
+})();
+</script>
+</body>
+</html>
