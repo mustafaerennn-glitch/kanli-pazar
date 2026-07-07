@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>İletişim — Kanlı Pazar</title>
+  <meta name="description" content="Kanlı Pazar Yaşayan Yayın için katkı, belge, fotoğraf, yorum, öneri ve düzeltme iletişim sayfası.">
+  <link rel="canonical" href="https://kanlipazar.net/iletisim/">
+  <link rel="alternate" hreflang="tr" href="https://kanlipazar.net/iletisim/">
+  <link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/iletisim/">
+  <link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/iletisim/">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="kp-iletisim-wrap">
+
+  <nav class="kp-nav">
+    <div class="kp-nav-inner">
+      <a class="kp-nav-brand" href="/">KANLI PAZAR</a>
+      <div class="kp-nav-links">
+        <a href="/kitap/">Kitap</a>
+        <a href="/medya/">Medya</a>
+        <a href="/guncellemeler/">Güncel</a>
+        <a href="/gorusler/">Görüşler</a>
+        <a href="/kaynakca/">Kaynakça</a>
+        <a href="/iletisim/" class="active">İletişim</a>
+        <div class="kp-search-trigger" id="kpSearchTrigger">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <div class="kp-search-dropdown" id="kpSearchDropdown">
+            <div class="kp-search-row">
+              <input type="text" id="kpSearchInput" class="kp-search-input" placeholder="Sitede ara..." autocomplete="off">
+              <button class="kp-search-btn" id="kpSearchBtn">Ara →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="kp-iletisim-hero">
+    <div class="kp-iletisim-hero-inner">
+      <div class="kp-iletisim-tag">YAŞAYAN YAYIN</div>
+      <h1 class="kp-iletisim-baslik">Katkı ve İletişim</h1>
+      <p class="kp-iletisim-aciklama">Kanlı Pazar Yaşayan Yayın, okuyucu katkılarıyla büyüyen bir arşivdir. Elinizde bu dönemle ilgili bir fotoğraf, belge ya da bilgi varsa, ya da yayında bir hata fark ettiyseniz aşağıdaki iletişim bağlantısını kullanarak paylaşabilirsiniz.</p>
+    </div>
+  </div>
+
+  <div class="kp-iletisim-content">
+    <div class="kp-iletisim-form-wrap">
+
+      <div class="kp-iletisim-katki-turleri">
+        <div class="kp-katki-tur"><span>📷</span> Fotoğraf</div>
+        <div class="kp-katki-tur"><span>📄</span> Doküman</div>
+        <div class="kp-katki-tur"><span>💬</span> Yorum</div>
+        <div class="kp-katki-tur"><span>💡</span> Öneri</div>
+        <div class="kp-katki-tur"><span>✏️</span> Düzeltme</div>
+      </div>
+
+      <form name="iletisim" method="POST" class="kp-iletisim-form" id="kpIletisimForm" data-netlify="true" netlify-honeypot="kp-bot-field">
+        <input type="hidden" name="form-name" value="iletisim">
+        <p class="kp-form-hidden"><label>Bu alanı boş bırakın: <input name="kp-bot-field"></label></p>
+
+        <label for="kpAdSoyad">Ad Soyad</label>
+        <input type="text" id="kpAdSoyad" name="ad-soyad" required>
+
+        <label for="kpEposta">E-posta</label>
+        <input type="email" id="kpEposta" name="eposta" required>
+
+        <label for="kpKatkiTuru">Katkı Türü</label>
+        <select id="kpKatkiTuru" name="katki-turu">
+          <option value="Fotoğraf">Fotoğraf</option>
+          <option value="Doküman">Doküman</option>
+          <option value="Yorum">Yorum</option>
+          <option value="Öneri">Öneri</option>
+          <option value="Düzeltme">Düzeltme</option>
+          <option value="Diğer">Diğer</option>
+        </select>
+
+        <label for="kpMesaj">Mesajınız</label>
+        <textarea id="kpMesaj" name="mesaj" required></textarea>
+
+        <button type="submit" class="kp-form-submit">Gönder</button>
+
+        <p class="kp-form-status" id="kpFormStatus" role="status" aria-live="polite"></p>
+      </form>
+
+    </div>
+  </div>
+
+  <div class="kp-iletisim-footer">
+    <div class="kp-iletisim-footer-inner">
+      <span>Kanlı Pazar Yaşayan Yayın</span>
+      <span class="kp-iletisim-footer-sep">—</span>
+      <a href="https://mustafaeren.net">mustafaeren.net</a>
+    </div>
+  </div>
+
+</div>
+
+<style>
+.kp-iletisim-wrap {
+  font-family: 'Georgia', serif;
+  color: #1a1a1a;
+  background: #fff;
+  min-height: 100vh;
+}
+.kp-nav {
+  background: #1a1a1a;
+  padding: 0 40px;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 100;
+}
+.kp-nav-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+.kp-nav-brand {
+  color: #BA7517;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.kp-nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.kp-nav-links a {
+  color: #ccc;
+  font-size: 13px;
+  text-decoration: none;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+.kp-nav-links a:hover,
+.kp-nav-links a.active {
+  color: #BA7517;
+}
+.kp-iletisim-hero {
+  background: #1a1a1a;
+  padding: 64px 40px 56px;
+  border-bottom: 3px solid #BA7517;
+}
+.kp-iletisim-hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.kp-iletisim-tag {
+  font-family: sans-serif;
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  color: #BA7517;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.kp-iletisim-baslik {
+  font-size: 36px;
+  color: #fff;
+  margin: 0 0 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.kp-iletisim-aciklama {
+  font-size: 16px;
+  color: #aaa;
+  line-height: 1.8;
+  max-width: 640px;
+  margin: 0;
+  font-family: sans-serif;
+}
+.kp-iletisim-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 56px 40px;
+}
+.kp-iletisim-form-wrap {
+  max-width: 640px;
+}
+.kp-iletisim-katki-turleri {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+.kp-katki-tur {
+  background: #BA751711;
+  border: 1px solid #BA751733;
+  color: #BA7517;
+  font-size: 12px;
+  font-family: sans-serif;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.kp-iletisim-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.kp-form-hidden {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+.kp-iletisim-form label {
+  font-size: 13px;
+  font-family: sans-serif;
+  color: #555;
+  font-weight: 600;
+  margin-top: 14px;
+}
+.kp-iletisim-form label:first-of-type {
+  margin-top: 0;
+}
+.kp-iletisim-form input[type="text"],
+.kp-iletisim-form input[type="email"],
+.kp-iletisim-form select,
+.kp-iletisim-form textarea {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #1a1a1a;
+  background: #fff;
+  box-sizing: border-box;
+  margin-top: 4px;
+}
+.kp-iletisim-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+.kp-form-submit {
+  align-self: flex-start;
+  background: #BA7517;
+  color: #fff;
+  border: none;
+  padding: 12px 32px;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  letter-spacing: 0.5px;
+  transition: background 0.2s;
+}
+.kp-form-submit:hover {
+  background: #9a6010;
+}
+.kp-form-submit:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+.kp-form-status {
+  font-size: 13px;
+  font-family: sans-serif;
+  margin-top: 14px;
+  min-height: 18px;
+}
+.kp-form-status.kp-form-ok {
+  color: #2e7d32;
+}
+.kp-form-status.kp-form-err {
+  color: #c62828;
+}
+.kp-iletisim-footer {
+  border-top: 1px solid #e0e0e0;
+  padding: 24px 40px;
+  background: #fafafa;
+}
+.kp-iletisim-footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #888;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.kp-iletisim-footer a {
+  color: #BA7517;
+  text-decoration: none;
+}
+.kp-iletisim-footer-sep {
+  color: #ccc;
+}
+@media (max-width: 768px) {
+  .kp-nav {
+    padding: 0 16px;
+    height: auto;
+  }
+  .kp-nav-inner {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 0;
+    gap: 8px;
+  }
+  .kp-nav-links {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0;
+    border-top: 1px solid #333;
+    padding-top: 6px;
+  }
+  .kp-nav-links a {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+  .kp-iletisim-hero {
+    padding: 32px 20px 28px;
+  }
+  .kp-iletisim-baslik {
+    font-size: 26px;
+  }
+  .kp-iletisim-content {
+    padding: 32px 20px;
+  }
+}
+</style>
+
+<script>
+(function() {
+  var trigger = document.getElementById('kpSearchTrigger');
+  var dropdown = document.getElementById('kpSearchDropdown');
+  var input = document.getElementById('kpSearchInput');
+  var btn = document.getElementById('kpSearchBtn');
+
+  if (!trigger) return;
+
+  trigger.addEventListener('click', function(e) {
+    var isOpen = dropdown.classList.contains('kp-search-open');
+    if (isOpen) {
+      dropdown.classList.remove('kp-search-open');
+    } else {
+      dropdown.classList.add('kp-search-open');
+      setTimeout(function() { input.focus(); }, 50);
+    }
+    e.stopPropagation();
+  });
+
+  dropdown.addEventListener('click', function(e) {
+    e.stopPropagation();
+  });
+
+  document.addEventListener('click', function() {
+    dropdown.classList.remove('kp-search-open');
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      dropdown.classList.remove('kp-search-open');
+    }
+  });
+
+  function doSearch() {
+    var q = input.value.trim();
+    if (!q) return;
+    window.location.href = '/arama/?q=' + encodeURIComponent(q);
+  }
+
+  btn.addEventListener('click', doSearch);
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') doSearch();
+  });
+})();
+</script>
+
+<script>
+(function() {
+  var form = document.getElementById('kpIletisimForm');
+  if (!form) return;
+  var status = document.getElementById('kpFormStatus');
+  var submitBtn = form.querySelector('.kp-form-submit');
+
+  function encode(data) {
+    return Object.keys(data)
+      .map(function(key) { return encodeURIComponent(key) + '=' + encodeURIComponent(data[key]); })
+      .join('&');
+  }
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var formData = {};
+    new FormData(form).forEach(function(value, key) { formData[key] = value; });
+
+    submitBtn.disabled = true;
+    status.textContent = 'Gönderiliyor...';
+    status.className = 'kp-form-status';
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode(formData)
+    })
+      .then(function(response) {
+        if (response.ok) {
+          form.reset();
+          status.textContent = 'Teşekkürler, mesajınız iletildi.';
+          status.className = 'kp-form-status kp-form-ok';
+        } else {
+          throw new Error('Sunucu hatası');
+        }
+      })
+      .catch(function() {
+        status.textContent = 'Bir hata oluştu, lütfen tekrar deneyin.';
+        status.className = 'kp-form-status kp-form-err';
+      })
+      .finally(function() {
+        submitBtn.disabled = false;
+      });
+  });
+})();
+</script>
+</body>
+</html>
