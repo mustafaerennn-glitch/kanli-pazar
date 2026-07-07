@@ -87,19 +87,19 @@ body{margin:0;background:#faf9f7}
 .kp-bolum-page{max-width:1100px;margin:0 auto;font-family:inherit}
 .kp-page,.kp-bolum-page{margin-top:4rem;margin-bottom:2rem;box-shadow:0 2px 10px rgba(0,0,0,0.06)}
 @media (max-width: 768px){.kp-page,.kp-bolum-page{margin-top:0;margin-bottom:0;box-shadow:none}}
-.kp-ch-bar{background:var(--color-background-secondary,#f5f5f3);border-bottom:0.5px solid #e0e0e0;padding:10px 24px;display:flex;align-items:center;gap:10px;font-size:12px;color:#888;flex-wrap:wrap;position:sticky;top:58px;z-index:998}
+.kp-ch-bar{background:var(--color-background-secondary,#f5f5f3);border-bottom:0.5px solid #e0e0e0;padding:10px 24px;display:flex;align-items:center;gap:10px;font-size:12px;color:#888;flex-wrap:wrap;position:sticky;top:74px;z-index:998}
 .kp-ch-bar a{color:#888;text-decoration:none}
 .kp-ch-bar .kp-ch-current{color:#1a1a1a;font-weight:500}
 .kp-ch-barnav{margin-left:auto;display:flex;gap:8px}
 .kp-ch-barnav a{font-size:12px;color:#BA7517;text-decoration:none;border:0.5px solid #BA751722;border-radius:4px;padding:3px 10px}
 .kp-bolum-layout{display:grid !important;grid-template-columns:minmax(0,5fr) minmax(0,2fr) !important;gap:0;align-items:start}
 .kp-bolum-main{padding:32px 32px 32px 24px}
-.kp-bolum-sidebar{padding:24px 16px;position:sticky;top:80px;max-height:calc(100vh - 80px);overflow-y:auto}
+.kp-bolum-sidebar{padding:24px 16px;position:sticky;top:115px;max-height:calc(100vh - 115px);overflow-y:auto}
 .kp-ch-badge{display:inline-block;font-size:11px;font-weight:500;background:#BA7517;color:#fff;border-radius:4px;padding:3px 10px;margin-bottom:10px}
 .kp-ch-meta{font-size:13px;color:#888;display:flex;gap:16px;flex-wrap:wrap}
 .kp-ch-meta .kp-ch-new{color:#BA7517}
 .kp-ch-rule{width:40px;height:2px;background:#BA7517;margin:14px 0}
-.kp-sec-label{font-size:11px;font-weight:500;color:#aaa;letter-spacing:0.08em;text-transform:uppercase;margin:28px 0 10px;scroll-margin-top:80px}
+.kp-sec-label{font-size:11px;font-weight:500;color:#aaa;letter-spacing:0.08em;text-transform:uppercase;margin:28px 0 10px;scroll-margin-top:115px}
 .kp-prose{font-size:15px;line-height:1.8;color:#1a1a1a}
 .kp-prose p{margin-bottom:14px}
 .kp-fn-ref{display:inline-block;font-size:11px;font-weight:500;color:#BA7517;background:#BA751711;border-radius:3px;padding:0 4px;margin-left:1px;vertical-align:super;line-height:1}
