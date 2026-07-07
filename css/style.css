@@ -10,7 +10,7 @@
 .kp-top{display:flex;border-bottom:1px solid #e0ddd8}
 .kp-top-left{flex:1;border-right:1px solid #e0ddd8;padding:2.5rem 2.5rem 2rem;display:flex;flex-direction:column;justify-content:space-between;min-height:400px}
 .kp-tag{font-size:10px;color:#b81c0a;letter-spacing:0.1em;text-transform:uppercase;font-family:Arial,sans-serif;font-weight:700;margin-bottom:0.875rem;display:block}
-.kp-title{font-size:60px;font-weight:700;color:#1a1816;line-height:0.92;letter-spacing:-0.02em;margin-top:0;margin-bottom:0.875rem}
+.kp-title{font-size:60px;font-weight:700;color:#1a1816;line-height:0.92;letter-spacing:-0.02em;margin-top:6px;margin-bottom:0.875rem}
 .kp-rule{width:40px;height:3px;background:#b81c0a;margin-bottom:0.875rem}
 .kp-sub{font-size:14px;color:#555;font-style:italic;line-height:1.5;margin-bottom:0.875rem}
 .kp-desc{font-size:13px;color:#888;line-height:1.75;margin-bottom:1.5rem;font-family:Arial,sans-serif}
@@ -46,7 +46,7 @@
 .kp-ch-row:last-child{border-bottom:none}
 .kp-ch-row:hover .kp-ch-title{color:#b81c0a}
 .kp-ch-badge{font-size:9px;font-weight:700;color:#b81c0a;background:#fdf0ee;padding:2px 7px;white-space:nowrap;margin-top:2px;flex-shrink:0;font-family:Arial,sans-serif}
-.kp-ch-title { font-size: 17px; font-weight: 700; color: #1a1a1a; margin-bottom: 3px; line-height: 1.35; font-family: Georgia, serif; }
+.kp-ch-title { font-size: 19px; font-weight: 700; color: #1a1a1a; margin-bottom: 4px; line-height: 1.35; font-family: Georgia, serif; }
 .kp-ch-meta{font-size:11px;color:#bbb;font-family:Arial,sans-serif}
 .kp-ch-new{font-size:10px;color:#b81c0a;font-family:Arial,sans-serif;margin-left:5px;font-weight:700}
 .kp-right-bottom{display:flex;flex-direction:column}
