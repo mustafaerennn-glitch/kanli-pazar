@@ -2,7 +2,7 @@
 .kp-nav{display:flex;align-items:center;justify-content:space-between;padding:22px 28px;border-bottom:2px solid #1a1816}
 .kp-nav-brand{display:flex;flex-direction:column}
 .kp-nav-logo{font-size:15px;font-weight:700;color:#1a1816}
-.kp-nav-sub{font-size:11px;color:#999;font-family:Arial,sans-serif;margin-top:1px}
+.kp-nav-sub{font-size:11px;color:#999;font-family:Arial,sans-serif;margin-top:5px}
 .kp-nav-links{display:flex}
 .kp-nl{font-size:13px;color:#555;padding:5px 16px;cursor:pointer;border-left:1px solid #e0ddd8;font-family:Arial,sans-serif;text-decoration:none}
 .kp-nl:first-child{border-left:none}
