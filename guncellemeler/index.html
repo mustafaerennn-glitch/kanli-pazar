@@ -59,13 +59,13 @@
 
     <!-- FİLTRE -->
     <div style="display:flex;gap:6px;margin-bottom:28px;flex-wrap:wrap;">
-      <button class="kp-gorusler-btn kp-medya-filter-active">Tümü</button>
-      <button class="kp-gorusler-btn">Fotoğraf</button>
-      <button class="kp-gorusler-btn">Not</button>
-      <button class="kp-gorusler-btn">Belge</button>
-      <button class="kp-gorusler-btn">Metin</button>
-      <button class="kp-gorusler-btn">Video</button>
-      <button class="kp-gorusler-btn">Düzeltme</button>
+      <button class="kp-gorusler-btn kp-medya-filter-active" onclick="filterGuncel('tumu', this)">Tümü</button>
+      <button class="kp-gorusler-btn" onclick="filterGuncel('fotograf', this)">Fotoğraf</button>
+      <button class="kp-gorusler-btn" onclick="filterGuncel('not', this)">Not</button>
+      <button class="kp-gorusler-btn" onclick="filterGuncel('belge', this)">Belge</button>
+      <button class="kp-gorusler-btn" onclick="filterGuncel('metin', this)">Metin</button>
+      <button class="kp-gorusler-btn" onclick="filterGuncel('video', this)">Video</button>
+      <button class="kp-gorusler-btn" onclick="filterGuncel('duzeltme', this)">Düzeltme</button>
     </div>
 
 <div class="kp-update-item" data-tur="not" data-bolum="bolum-2" style="margin-bottom:16px;">
@@ -544,15 +544,15 @@
     
   <div class="kp-sb-card">
     <div class="kp-sb-title">GÜNCELLEMELER</div>
-    <a href="#" class="kp-toc-item"><span>Önsöz</span><span class="kp-toc-pg" id="count-onsoz"></span></a>
-    <a href="#" class="kp-toc-item"><span>Giriş</span><span class="kp-toc-pg" id="count-giris"></span></a>
-    <a href="#" class="kp-toc-item"><span>Bölüm 1</span><span class="kp-toc-pg" id="count-bolum-1"></span></a>
-    <a href="#" class="kp-toc-item"><span>Bölüm 2</span><span class="kp-toc-pg" id="count-bolum-2"></span></a>
-    <a href="#" class="kp-toc-item"><span>Bölüm 3</span><span class="kp-toc-pg" id="count-bolum-3"></span></a>
-    <a href="#" class="kp-toc-item"><span>Bölüm 4</span><span class="kp-toc-pg" id="count-bolum-4"></span></a>
-    <a href="#" class="kp-toc-item"><span>Bölüm 5</span><span class="kp-toc-pg" id="count-bolum-5"></span></a>
-    <a href="#" class="kp-toc-item"><span>Bölüm 6</span><span class="kp-toc-pg" id="count-bolum-6"></span></a>
-    <a href="#" class="kp-toc-item"><span>Sonsöz</span><span class="kp-toc-pg" id="count-sonsoz"></span></a>
+    <a href="#" class="kp-toc-item" onclick="filterBolum('onsoz', this); return false;"><span>Önsöz</span><span class="kp-toc-pg" id="count-onsoz"></span></a>
+    <a href="#" class="kp-toc-item" onclick="filterBolum('giris', this); return false;"><span>Giriş</span><span class="kp-toc-pg" id="count-giris"></span></a>
+    <a href="#" class="kp-toc-item" onclick="filterBolum('bolum-1', this); return false;"><span>Bölüm 1</span><span class="kp-toc-pg" id="count-bolum-1"></span></a>
+    <a href="#" class="kp-toc-item" onclick="filterBolum('bolum-2', this); return false;"><span>Bölüm 2</span><span class="kp-toc-pg" id="count-bolum-2"></span></a>
+    <a href="#" class="kp-toc-item" onclick="filterBolum('bolum-3', this); return false;"><span>Bölüm 3</span><span class="kp-toc-pg" id="count-bolum-3"></span></a>
+    <a href="#" class="kp-toc-item" onclick="filterBolum('bolum-4', this); return false;"><span>Bölüm 4</span><span class="kp-toc-pg" id="count-bolum-4"></span></a>
+    <a href="#" class="kp-toc-item" onclick="filterBolum('bolum-5', this); return false;"><span>Bölüm 5</span><span class="kp-toc-pg" id="count-bolum-5"></span></a>
+    <a href="#" class="kp-toc-item" onclick="filterBolum('bolum-6', this); return false;"><span>Bölüm 6</span><span class="kp-toc-pg" id="count-bolum-6"></span></a>
+    <a href="#" class="kp-toc-item" onclick="filterBolum('sonsoz', this); return false;"><span>Sonsöz</span><span class="kp-toc-pg" id="count-sonsoz"></span></a>
   </div>
 
   <div class="kp-sb-card">
