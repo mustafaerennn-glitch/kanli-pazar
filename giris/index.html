@@ -234,6 +234,22 @@ function kpKapModal1946() {
         </div>
       </div>
 
+
+<div style="margin-top:32px;padding-top:24px;border-top:0.5px solid #e0e0e0;">
+  <div class="kp-citation-label">Bu bölüme yorum yap</div>
+  <form name="bolum-yorum" method="POST" data-netlify="true" netlify-honeypot="kp-bot-field" class="kp-iletisim-form" id="kpYorumForm" style="max-width:520px;">
+    <input type="hidden" name="form-name" value="bolum-yorum">
+    <input type="hidden" name="bolum" value="Giriş — 16 Şubat 1969'a Giden Yol">
+    <p class="kp-form-hidden"><label>Bu alanı boş bırakın: <input name="kp-bot-field"></label></p>
+    <label for="kpYorumAd">Ad (isteğe bağlı)</label>
+    <input type="text" id="kpYorumAd" name="ad">
+    <label for="kpYorumMetin">Yorumunuz</label>
+    <textarea id="kpYorumMetin" name="yorum" required></textarea>
+    <button type="submit" class="kp-form-submit">Gönder</button>
+    <p class="kp-form-status" id="kpYorumStatus" role="status" aria-live="polite"></p>
+  </form>
+</div>
+
     </div>
 
     <div class="kp-bolum-sidebar">
@@ -560,6 +576,53 @@ mark.kp-local-current {
   clearBtn.addEventListener('click', function() {
     input.value = '';
     temizle();
+  });
+})();
+</script>
+
+<script>
+(function() {
+  var form = document.getElementById('kpYorumForm');
+  if (!form) return;
+  var status = document.getElementById('kpYorumStatus');
+  var submitBtn = form.querySelector('.kp-form-submit');
+
+  function encode(data) {
+    return Object.keys(data)
+      .map(function(key) { return encodeURIComponent(key) + '=' + encodeURIComponent(data[key]); })
+      .join('&');
+  }
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var formData = {};
+    new FormData(form).forEach(function(value, key) { formData[key] = value; });
+
+    submitBtn.disabled = true;
+    status.textContent = 'Gönderiliyor...';
+    status.className = 'kp-form-status';
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode(formData)
+    })
+      .then(function(response) {
+        if (response.ok) {
+          form.reset();
+          status.textContent = 'Teşekkürler, yorumunuz iletildi.';
+          status.className = 'kp-form-status kp-form-ok';
+        } else {
+          throw new Error('Sunucu hatası');
+        }
+      })
+      .catch(function() {
+        status.textContent = 'Bir hata oluştu, lütfen tekrar deneyin.';
+        status.className = 'kp-form-status kp-form-err';
+      })
+      .finally(function() {
+        submitBtn.disabled = false;
+      });
   });
 })();
 </script>
