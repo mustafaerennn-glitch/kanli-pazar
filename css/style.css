@@ -83,8 +83,10 @@
 .kp-page{position:relative}
 .kp-page::before{content:'';position:fixed;inset:0;background-image:url('https://mustafaeren.net/wp-content/uploads/2026/03/MEren-KanliPazar.png');background-size:cover;background-position:center 65%;opacity:0.15;z-index:0;pointer-events:none}
 .kp-top-left,.kp-top-right,.kp-bottom,.kp-footer{position:relative;z-index:1}
-.kp-page,.kp-bolum-page{margin-top:-80px}
+body{margin:0;background:#e6e2da}
 .kp-bolum-page{max-width:1100px;margin:0 auto;font-family:inherit}
+.kp-page,.kp-bolum-page{margin-top:2rem;margin-bottom:2rem;box-shadow:0 6px 28px rgba(0,0,0,0.12)}
+@media (max-width: 768px){.kp-page,.kp-bolum-page{margin-top:0;margin-bottom:0;box-shadow:none}}
 .kp-ch-bar{background:var(--color-background-secondary,#f5f5f3);border-bottom:0.5px solid #e0e0e0;padding:10px 24px;display:flex;align-items:center;gap:10px;font-size:12px;color:#888;flex-wrap:wrap;position:sticky;top:58px;z-index:998}
 .kp-ch-bar a{color:#888;text-decoration:none}
 .kp-ch-bar .kp-ch-current{color:#1a1a1a;font-weight:500}
