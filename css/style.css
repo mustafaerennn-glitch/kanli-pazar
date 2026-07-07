@@ -1,5 +1,5 @@
 .kp-page{background:#fff;color:#1a1816;font-family:Georgia,serif;border:1px solid #e0ddd8;max-width:1100px;margin:0 auto}
-.kp-nav{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;border-bottom:2px solid #1a1816}
+.kp-nav{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;border-bottom:2px solid #1a1816}
 .kp-nav-brand{display:flex;flex-direction:column}
 .kp-nav-logo{font-size:15px;font-weight:700;color:#1a1816}
 .kp-nav-sub{font-size:11px;color:#999;font-family:Arial,sans-serif;margin-top:8px}
