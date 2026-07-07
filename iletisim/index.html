@@ -58,7 +58,7 @@
         <div class="kp-katki-tur"><span>✏️</span> Düzeltme</div>
       </div>
 
-      <form name="iletisim" method="POST" class="kp-iletisim-form" id="kpIletisimForm" data-netlify="true" netlify-honeypot="kp-bot-field">
+      <form name="iletisim" method="POST" class="kp-iletisim-form" id="kpIletisimForm" data-netlify="true" netlify-honeypot="kp-bot-field" enctype="multipart/form-data">
         <input type="hidden" name="form-name" value="iletisim">
         <p class="kp-form-hidden"><label>Bu alanı boş bırakın: <input name="kp-bot-field"></label></p>
 
@@ -80,6 +80,9 @@
 
         <label for="kpMesaj">Mesajınız</label>
         <textarea id="kpMesaj" name="mesaj" required></textarea>
+
+        <label for="kpDosya">Dosya (isteğe bağlı — fotoğraf, belge vb.)</label>
+        <input type="file" id="kpDosya" name="dosya" multiple>
 
         <button type="submit" class="kp-form-submit">Gönder</button>
 
@@ -241,6 +244,18 @@
   min-height: 140px;
   resize: vertical;
 }
+.kp-iletisim-form input[type="file"] {
+  width: 100%;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-size: 13px;
+  font-family: sans-serif;
+  color: #555;
+  background: #faf9f7;
+  box-sizing: border-box;
+  margin-top: 4px;
+}
 .kp-form-submit {
   align-self: flex-start;
   background: #BA7517;
@@ -385,16 +400,9 @@
   var status = document.getElementById('kpFormStatus');
   var submitBtn = form.querySelector('.kp-form-submit');
 
-  function encode(data) {
-    return Object.keys(data)
-      .map(function(key) { return encodeURIComponent(key) + '=' + encodeURIComponent(data[key]); })
-      .join('&');
-  }
-
   form.addEventListener('submit', function(e) {
     e.preventDefault();
-    var formData = {};
-    new FormData(form).forEach(function(value, key) { formData[key] = value; });
+    var formData = new FormData(form);
 
     submitBtn.disabled = true;
     status.textContent = 'Gönderiliyor...';
@@ -402,8 +410,7 @@
 
     fetch('/', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode(formData)
+      body: formData
     })
       .then(function(response) {
         if (response.ok) {
