@@ -7,6 +7,7 @@
 <meta name="description" content="27 Mayıs 1960 darbesi sonrası Türkiye'nin politik ortamı, MHP, MTTB ve komando kamplarının kökenleri — Kanlı Pazar kitabından Bölüm 1.">
 <link rel="canonical" href="https://kanlipazar.net/bolum-1/">
 <link rel="alternate" hreflang="tr" href="https://kanlipazar.net/bolum-1/">
+<link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/chapter-1/">
 <link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/bolum-1/">
 <link rel="stylesheet" href="/css/style.css">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -39,7 +40,16 @@
     <button class="kp-search-btn" id="kpSearchBtn">Ara →</button>
   </div>
 </div>
-</div>  
+</div>
+      <div class="kp-lang-trigger" id="kpLangTrigger">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+        <div class="kp-lang-dropdown" id="kpLangDropdown">
+          <span class="kp-lang-opt kp-lang-opt-active">Türkçe</span>
+          <a href="/en/chapter-1/" class="kp-lang-opt">English</a>
+        </div>
+      </div>
 </div>
   </div>
   <!-- ÜST BAR -->
@@ -2794,6 +2804,33 @@ mark.kp-local-current {
 })();
 </script>
 <!-- /wp:html -->
+<script>
+(function() {
+  var trigger = document.getElementById('kpLangTrigger');
+  var dropdown = document.getElementById('kpLangDropdown');
+
+  if (!trigger) return;
+
+  trigger.addEventListener('click', function(e) {
+    dropdown.classList.toggle('kp-lang-open');
+    e.stopPropagation();
+  });
+
+  dropdown.addEventListener('click', function(e) {
+    e.stopPropagation();
+  });
+
+  document.addEventListener('click', function() {
+    dropdown.classList.remove('kp-lang-open');
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      dropdown.classList.remove('kp-lang-open');
+    }
+  });
+})();
+</script>
 <script>
 (function() {
   var form = document.getElementById('kpYorumForm');
