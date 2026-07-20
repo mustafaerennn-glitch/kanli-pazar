@@ -6,6 +6,7 @@
 <title>Kanlı Pazar — Yaşayan Yayın | Mustafa Eren</title>
 <meta name="description" content="Kanlı Pazar: 1960'lar Türkiyesi'nde Milliyetçiler, İslamcılar ve Sol. Mustafa Eren'in 2012 tarihli kitabının sürekli genişletilen dijital sürümü.">
 <link rel="alternate" hreflang="tr" href="https://kanlipazar.net/">
+<link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/">
 <link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/">
 <link rel="stylesheet" href="/css/style.css">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -36,6 +37,15 @@
             <input type="text" id="kpSearchInput" class="kp-search-input" placeholder="Sitede ara..." autocomplete="off">
             <button class="kp-search-btn" id="kpSearchBtn">Ara →</button>
           </div>
+        </div>
+      </div>
+      <div class="kp-lang-trigger" id="kpLangTrigger">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+        <div class="kp-lang-dropdown" id="kpLangDropdown">
+          <span class="kp-lang-opt kp-lang-opt-active">Türkçe</span>
+          <a href="/en/" class="kp-lang-opt">English</a>
         </div>
       </div>
     </div>
@@ -253,6 +263,32 @@ function kpAtifKopyala(btn) {
   btn.addEventListener('click', doSearch);
   input.addEventListener('keydown', function(e) {
     if (e.key === 'Enter') doSearch();
+  });
+})();
+
+(function() {
+  var trigger = document.getElementById('kpLangTrigger');
+  var dropdown = document.getElementById('kpLangDropdown');
+
+  if (!trigger) return;
+
+  trigger.addEventListener('click', function(e) {
+    dropdown.classList.toggle('kp-lang-open');
+    e.stopPropagation();
+  });
+
+  dropdown.addEventListener('click', function(e) {
+    e.stopPropagation();
+  });
+
+  document.addEventListener('click', function() {
+    dropdown.classList.remove('kp-lang-open');
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      dropdown.classList.remove('kp-lang-open');
+    }
   });
 })();
 </script>
