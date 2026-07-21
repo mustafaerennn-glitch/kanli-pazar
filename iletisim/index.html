@@ -48,6 +48,21 @@
             <a href="/en/contact/" class="kp-lang-opt">English</a>
           </div>
         </div>
+        <details class="kp-mobile-menu">
+          <summary aria-label="Menü">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+          </summary>
+          <div class="kp-mobile-menu-list">
+            <a href="/kitap/">Kitap</a>
+            <a href="/medya/">Medya</a>
+            <a href="/guncellemeler/">Güncel</a>
+            <a href="/gorusler/">Görüşler</a>
+            <a href="/kaynakca/">Kaynakça</a>
+            <a href="/iletisim/" class="active">İletişim</a>
+          </div>
+        </details>
       </div>
     </div>
   </nav>
@@ -339,13 +354,14 @@
   .kp-nav-links {
     width: 100%;
     flex-wrap: wrap;
+    justify-content: flex-end;
     gap: 0;
     border-top: 1px solid #333;
     padding-top: 6px;
+    position: relative;
   }
-  .kp-nav-links a {
-    font-size: 11px;
-    padding: 4px 8px;
+  .kp-nav-links > a {
+    display: none;
   }
   .kp-iletisim-hero {
     padding: 32px 20px 28px;
@@ -471,6 +487,14 @@
       });
   });
 })();
+</script>
+
+<script>
+document.addEventListener('click', function(e) {
+  document.querySelectorAll('details.kp-mobile-menu[open]').forEach(function(d) {
+    if (!d.contains(e.target)) d.removeAttribute('open');
+  });
+});
 </script>
 </body>
 </html>
