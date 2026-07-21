@@ -336,7 +336,7 @@ mark.kp-local-current { background:#FFB700; color:inherit; padding:0 2px; border
   dropdown.addEventListener('click', function(e) { e.stopPropagation(); });
   document.addEventListener('click', function() { dropdown.classList.remove('kp-search-open'); });
   document.addEventListener('keydown', function(e) { if (e.key === 'Escape') dropdown.classList.remove('kp-search-open'); });
-  function doSearch() { var q = input.value.trim(); if (!q) return; window.location.href = '/arama/?q=' + encodeURIComponent(q); }
+  function doSearch() { var q = input.value.trim(); if (!q) return; window.location.href = '/en/search/?q=' + encodeURIComponent(q); }
   btn.addEventListener('click', doSearch);
   input.addEventListener('keydown', function(e) { if (e.key === 'Enter') doSearch(); });
 })();

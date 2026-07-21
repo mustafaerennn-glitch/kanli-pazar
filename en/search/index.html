@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arama | Kanlı Pazar</title>
-<meta name="description" content="Kanlı Pazar statik sitesinde kitap bölümleri, ekler ve kaynaklar içinde arama yapın.">
-<link rel="canonical" href="https://kanlipazar.net/arama/">
+<title>Search | Kanlı Pazar</title>
+<meta name="description" content="Search the Kanlı Pazar living edition — book chapters, additions, and sources.">
+<link rel="canonical" href="https://kanlipazar.net/en/search/">
 <link rel="alternate" hreflang="tr" href="https://kanlipazar.net/arama/">
 <link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/search/">
 <link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/arama/">
@@ -20,25 +20,25 @@
 
 <!-- NAV -->
 <div class="kp-nav">
-  <a href="/" class="kp-nav-brand" style="text-decoration:none;">
+  <a href="/en/" class="kp-nav-brand" style="text-decoration:none;">
   <span class="kp-nav-logo">Kanlı Pazar</span>
-  <span class="kp-nav-sub">Mustafa Eren — Yaşayan yayın</span>
+  <span class="kp-nav-sub">Mustafa Eren — A living edition</span>
 </a>
   <div class="kp-nav-links">
-    <a href="/kitap/" class="kp-nl">Kitap</a>
-    <a href="/medya/" class="kp-nl">Medya</a>
-    <a href="/guncellemeler/" class="kp-nl">Güncel</a>
-    <a href="/gorusler/" class="kp-nl">Görüşler</a>
-    <a href="/kaynakca/" class="kp-nl">Kaynakça</a>
-    <a href="/iletisim/" class="kp-nl">İletişim</a>
+    <a href="/en/book/" class="kp-nl">Book</a>
+    <a href="/en/media/" class="kp-nl">Media</a>
+    <a href="/en/updates/" class="kp-nl">Updates</a>
+    <a href="/en/reviews/" class="kp-nl">Reviews</a>
+    <a href="/en/bibliography/" class="kp-nl">Bibliography</a>
+    <a href="/en/contact/" class="kp-nl">Contact</a>
     <div class="kp-search-trigger" id="kpSearchTrigger">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
       </svg>
       <div class="kp-search-dropdown" id="kpSearchDropdown">
         <div class="kp-search-row">
-          <input type="text" id="kpSearchInput" class="kp-search-input" placeholder="Sitede ara..." autocomplete="off">
-          <button class="kp-search-btn" id="kpSearchBtn">Ara →</button>
+          <input type="text" id="kpSearchInput" class="kp-search-input" placeholder="Search the site..." autocomplete="off">
+          <button class="kp-search-btn" id="kpSearchBtn">Search →</button>
         </div>
       </div>
     </div>
@@ -47,8 +47,8 @@
         <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
       </svg>
       <div class="kp-lang-dropdown" id="kpLangDropdown">
-        <span class="kp-lang-opt kp-lang-opt-active">Türkçe</span>
-        <a href="/en/search/" class="kp-lang-opt">English</a>
+        <a href="/arama/" class="kp-lang-opt">Türkçe</a>
+        <span class="kp-lang-opt kp-lang-opt-active">English</span>
       </div>
     </div>
         <details class="kp-mobile-menu">
@@ -58,12 +58,12 @@
           </svg>
         </summary>
         <div class="kp-mobile-menu-list">
-          <a href="/kitap/">Kitap</a>
-          <a href="/medya/">Medya</a>
-          <a href="/guncellemeler/">Güncel</a>
-          <a href="/gorusler/">Görüşler</a>
-          <a href="/kaynakca/">Kaynakça</a>
-          <a href="/iletisim/">İletişim</a>
+          <a href="/en/book/">Book</a>
+          <a href="/en/media/">Media</a>
+          <a href="/en/updates/">Updates</a>
+          <a href="/en/reviews/">Reviews</a>
+          <a href="/en/bibliography/">Bibliography</a>
+          <a href="/en/contact/">Contact</a>
         </div>
       </details>
     </div>
@@ -71,9 +71,9 @@
 
 <!-- BREADCRUMB -->
 <div class="kp-ch-bar">
-  <a href="/">Ana sayfa</a>
+  <a href="/en/">Home</a>
   <span>›</span>
-  <span class="kp-ch-current">Arama</span>
+  <span class="kp-ch-current">Search</span>
 </div>
 
 <!-- ANA LAYOUT -->
@@ -82,8 +82,8 @@
   <!-- SOL SÜTUN -->
   <div class="kp-bolum-main">
 
-    <span class="kp-ch-badge">Arama</span>
-    <h1 class="kp-ch-title">Kitapta Ara</h1>
+    <span class="kp-ch-badge">Search</span>
+    <h1 class="kp-ch-title">Search the Book</h1>
     <div class="kp-ch-rule"></div>
 
     <!-- ARAMA KUTUSU -->
@@ -91,13 +91,13 @@
       <input
         id="kp-search-input"
         type="text"
-        placeholder="Bir isim, yer veya kavram yazın…"
+        placeholder="Enter a name, place, or concept…"
         style="flex:1;padding:12px 16px;font-size:15px;font-family:Georgia,serif;border:1px solid #e0e0e0;border-radius:6px;outline:none;color:#1a1a1a;"
       />
       <button
         id="kp-search-btn"
         style="padding:12px 20px;background:#BA7517;color:#fff;border:none;border-radius:6px;font-size:14px;font-family:Arial,sans-serif;cursor:pointer;"
-      >Ara</button>
+      >Search</button>
     </div>
 
     <!-- SONUÇLAR -->
@@ -108,42 +108,42 @@
   <!-- SAĞ SIDEBAR -->
   <div class="kp-bolum-sidebar">
     <div class="kp-sb-card">
-      <div class="kp-sb-title">KİTAP BÖLÜMLERİ</div>
-      <a href="/onsoz/" class="kp-ch-list-item">
-        <span class="kp-ch-list-badge">Önsöz</span>
-        <span class="kp-ch-list-title">Önsöz</span>
+      <div class="kp-sb-title">BOOK CHAPTERS</div>
+      <a href="/en/preface/" class="kp-ch-list-item">
+        <span class="kp-ch-list-badge">Preface</span>
+        <span class="kp-ch-list-title">Preface</span>
       </a>
-      <a href="/giris/" class="kp-ch-list-item">
-        <span class="kp-ch-list-badge">Giriş</span>
-        <span class="kp-ch-list-title">16 Şubat 1969'a Giden Yol</span>
+      <a href="/en/introduction/" class="kp-ch-list-item">
+        <span class="kp-ch-list-badge">Introduction</span>
+        <span class="kp-ch-list-title">The Road to 16 February 1969</span>
       </a>
-      <a href="/bolum-1/" class="kp-ch-list-item">
-        <span class="kp-ch-list-badge">Böl. 1</span>
-        <span class="kp-ch-list-title">27 Mayıs 1960 Sonrası Politik Ortam</span>
+      <a href="/en/chapter-1/" class="kp-ch-list-item">
+        <span class="kp-ch-list-badge">Ch. 1</span>
+        <span class="kp-ch-list-title">The Political Climate After 27 May 1960</span>
       </a>
-      <a href="/bolum-2/" class="kp-ch-list-item">
-        <span class="kp-ch-list-badge">Böl. 2</span>
-        <span class="kp-ch-list-title">Kanlı Pazar'a Doğru</span>
+      <a href="/en/chapter-2/" class="kp-ch-list-item">
+        <span class="kp-ch-list-badge">Ch. 2</span>
+        <span class="kp-ch-list-title">Toward Kanlı Pazar</span>
       </a>
-      <a href="/bolum-3/" class="kp-ch-list-item">
-        <span class="kp-ch-list-badge">Böl. 3</span>
-        <span class="kp-ch-list-title"><em>Bugün</em> Gazetesi ve "Kanlı Pazar"</span>
+      <a href="/en/chapter-3/" class="kp-ch-list-item">
+        <span class="kp-ch-list-badge">Ch. 3</span>
+        <span class="kp-ch-list-title"><em>Bugün</em> Newspaper and "Kanlı Pazar"</span>
       </a>
-      <a href="/bolum-4/" class="kp-ch-list-item">
-        <span class="kp-ch-list-badge" style="background:#BA751711;color:#BA7517;">Odak</span>
-        <span class="kp-ch-list-title">Adım Adım Kanlı Pazar</span>
+      <a href="/en/chapter-4/" class="kp-ch-list-item">
+        <span class="kp-ch-list-badge" style="background:#BA751711;color:#BA7517;">Central Chapter</span>
+        <span class="kp-ch-list-title">Kanlı Pazar: A Step-by-Step Account</span>
       </a>
-      <a href="/bolum-5/" class="kp-ch-list-item">
-        <span class="kp-ch-list-badge">Böl. 5</span>
-        <span class="kp-ch-list-title">Kanlı Pazar'ın Ardından Söylenenler</span>
+      <a href="/en/chapter-5/" class="kp-ch-list-item">
+        <span class="kp-ch-list-badge">Ch. 5</span>
+        <span class="kp-ch-list-title">What Was Said After Kanlı Pazar</span>
       </a>
-      <a href="/bolum-6/" class="kp-ch-list-item">
-        <span class="kp-ch-list-badge">Böl. 6</span>
-        <span class="kp-ch-list-title">Yıllar Sonra Kanlı Pazar</span>
+      <a href="/en/chapter-6/" class="kp-ch-list-item">
+        <span class="kp-ch-list-badge">Ch. 6</span>
+        <span class="kp-ch-list-title">Kanlı Pazar, Years Later</span>
       </a>
-      <a href="/sonsoz/" class="kp-ch-list-item">
-        <span class="kp-ch-list-badge">Sonsöz</span>
-        <span class="kp-ch-list-title">Sonsöz</span>
+      <a href="/en/afterword/" class="kp-ch-list-item">
+        <span class="kp-ch-list-badge">Afterword</span>
+        <span class="kp-ch-list-title">Afterword</span>
       </a>
     </div>
   </div><!-- /.kp-bolum-sidebar -->
@@ -156,20 +156,21 @@
 (function() {
 
   var KP_SEARCH_PAGES = [
-    { title: 'Önsöz', url: '/onsoz/' },
-    { title: 'Giriş — 16 Şubat 1969\'a Giden Yol', url: '/giris/' },
-    { title: 'Bölüm 1 — 27 Mayıs 1960 Sonrası Politik Ortam', url: '/bolum-1/' },
-    { title: 'Bölüm 2 — Kanlı Pazar\'a Doğru', url: '/bolum-2/' },
-    { title: 'Bölüm 3 — Bugün Gazetesi ve Kanlı Pazar', url: '/bolum-3/' },
-    { title: 'Bölüm 4 — Adım Adım Kanlı Pazar', url: '/bolum-4/' },
-    { title: 'Bölüm 5 — Kanlı Pazar\'ın Ardından Söylenenler', url: '/bolum-5/' },
-    { title: 'Bölüm 6 — Yıllar Sonra Kanlı Pazar', url: '/bolum-6/' },
-    { title: 'Sonsöz', url: '/sonsoz/' },
-    { title: 'Kaynakça', url: '/kaynakca/' },
-    { title: 'Medya', url: '/medya/' },
-    { title: 'Güncellemeler', url: '/guncellemeler/' },
-    { title: 'Görüşler', url: '/gorusler/' },
-    { title: 'Okuyucu Rehberi', url: '/okuyucu-rehberi/' }
+    { title: 'Preface', url: '/en/preface/' },
+    { title: 'Introduction — The Road to 16 February 1969', url: '/en/introduction/' },
+    { title: 'Chapter 1 — The Political Climate After 27 May 1960', url: '/en/chapter-1/' },
+    { title: 'Chapter 2 — Toward Kanlı Pazar', url: '/en/chapter-2/' },
+    { title: 'Chapter 3 — Bugün Newspaper and Kanlı Pazar', url: '/en/chapter-3/' },
+    { title: 'Chapter 4 — Kanlı Pazar: A Step-by-Step Account', url: '/en/chapter-4/' },
+    { title: 'Chapter 5 — What Was Said After Kanlı Pazar', url: '/en/chapter-5/' },
+    { title: 'Chapter 6 — Kanlı Pazar, Years Later', url: '/en/chapter-6/' },
+    { title: 'Afterword', url: '/en/afterword/' },
+    { title: 'Bibliography', url: '/en/bibliography/' },
+    { title: 'Media', url: '/en/media/' },
+    { title: 'Updates', url: '/en/updates/' },
+    { title: 'Reviews', url: '/en/reviews/' },
+    { title: 'Reader Guide', url: '/en/reader-guide/' },
+    { title: 'Comments', url: '/en/comments/' }
   ];
 
   function escapeHTML(str) {
@@ -202,8 +203,8 @@
 
   function getAllExcerpts(text, query, contextLen) {
     contextLen = contextLen || 180;
-    var lower = text.toLocaleLowerCase('tr-TR');
-    var qLower = query.toLocaleLowerCase('tr-TR');
+    var lower = text.toLocaleLowerCase('en-US');
+    var qLower = query.toLocaleLowerCase('en-US');
     var excerpts = [];
     var matchIndices = [];
     var searchFrom = 0;
@@ -238,12 +239,12 @@
   function renderResults(results, query) {
     var container = document.getElementById('kp-search-results');
     if (!results.length) {
-      container.innerHTML = '<p style="color:#888;font-family:Arial,sans-serif;font-size:14px;">"' + escapeHTML(query) + '" için sonuç bulunamadı.</p>';
+      container.innerHTML = '<p style="color:#888;font-family:Arial,sans-serif;font-size:14px;">No results found for "' + escapeHTML(query) + '".</p>';
       return;
     }
 
     var totalMatches = results.reduce(function(sum, r) { return sum + r.excerpts.length; }, 0);
-    var html = '<p style="font-size:13px;color:#888;font-family:Arial,sans-serif;margin-bottom:24px;">' + results.length + ' sayfada ' + totalMatches + ' sonuç bulundu.</p>';
+    var html = '<p style="font-size:13px;color:#888;font-family:Arial,sans-serif;margin-bottom:24px;">' + totalMatches + ' results found on ' + results.length + ' pages.</p>';
 
     results.forEach(function(r) {
       html += '<div style="border:0.5px solid #e0e0e0;border-radius:8px;padding:20px 24px;margin-bottom:16px;">';
@@ -256,7 +257,7 @@
         html += '<div>';
         html += '<p style="font-size:14px;line-height:1.75;color:#444;font-family:Georgia,serif;border-left:2px solid #BA751733;padding-left:12px;margin:0;">' + ex + '</p>';
         html += '<div style="text-align:right;margin-top:5px;">';
-        html += '<a href="' + pasajLink + '" target="_blank" rel="noopener noreferrer" style="font-size:12px;color:#BA7517;font-family:Arial,sans-serif;text-decoration:none;border-bottom:1px solid #BA751766;">Bu pasaja git →</a>';
+        html += '<a href="' + pasajLink + '" target="_blank" rel="noopener noreferrer" style="font-size:12px;color:#BA7517;font-family:Arial,sans-serif;text-decoration:none;border-bottom:1px solid #BA751766;">Go to this passage →</a>';
         html += '</div>';
         html += '</div>';
       });
@@ -272,7 +273,7 @@
     query = query.trim();
 
     var container = document.getElementById('kp-search-results');
-    container.innerHTML = '<p style="color:#888;font-family:Arial,sans-serif;font-size:14px;">Aranıyor…</p>';
+    container.innerHTML = '<p style="color:#888;font-family:Arial,sans-serif;font-size:14px;">Searching…</p>';
 
     var newUrl = window.location.pathname + '?q=' + encodeURIComponent(query);
     if (window.history && window.history.replaceState) {
@@ -364,7 +365,7 @@
   function doTopSearch() {
     var q = input.value.trim();
     if (!q) return;
-    window.location.href = '/arama/?q=' + encodeURIComponent(q);
+    window.location.href = '/en/search/?q=' + encodeURIComponent(q);
   }
 
   btn.addEventListener('click', doTopSearch);
@@ -372,14 +373,6 @@
     if (e.key === 'Enter') doTopSearch();
   });
 })();
-</script>
-
-<script>
-document.addEventListener('click', function(e) {
-  document.querySelectorAll('details.kp-mobile-menu[open]').forEach(function(d) {
-    if (!d.contains(e.target)) d.removeAttribute('open');
-  });
-});
 </script>
 
 <script>
@@ -408,6 +401,14 @@ document.addEventListener('click', function(e) {
     }
   });
 })();
+</script>
+
+<script>
+document.addEventListener('click', function(e) {
+  document.querySelectorAll('details.kp-mobile-menu[open]').forEach(function(d) {
+    if (!d.contains(e.target)) d.removeAttribute('open');
+  });
+});
 </script>
 </body>
 </html>
