@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medya & Görseller | Kanlı Pazar</title>
-  <meta name="description" content="Kanlı Pazar kitabında ve yaşayan yayında yer alan fotoğraflar, görseller ve medya kaynakları; bölüm bazlı arşiv.">
-  <link rel="canonical" href="https://kanlipazar.net/medya/">
+  <title>Media & Images | Kanlı Pazar</title>
+  <meta name="description" content="Photographs, images, and media sources from the Kanlı Pazar book and living edition, organized by chapter.">
+  <link rel="canonical" href="https://kanlipazar.net/en/media/">
   <link rel="alternate" hreflang="tr" href="https://kanlipazar.net/medya/">
   <link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/media/">
   <link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/medya/">
@@ -19,25 +19,25 @@
 <div class="kp-bolum-page">
 
 <div class="kp-nav">
-  <a href="/" class="kp-nav-brand" style="text-decoration:none;">
+  <a href="/en/" class="kp-nav-brand" style="text-decoration:none;">
   <span class="kp-nav-logo">Kanlı Pazar</span>
-  <span class="kp-nav-sub">Mustafa Eren — Yaşayan yayın</span>
+  <span class="kp-nav-sub">Mustafa Eren — A living edition</span>
 </a>
   <div class="kp-nav-links">
-    <a href="/kitap/" class="kp-nl">Kitap</a>
-    <a href="/medya/" class="kp-nl" style="color:#BA7517;">Medya</a>
-    <a href="/guncellemeler/" class="kp-nl">Güncel</a>
-    <a href="/gorusler/" class="kp-nl">Görüşler</a>
-    <a href="/kaynakca/" class="kp-nl">Kaynakça</a>
-    <a href="/iletisim/" class="kp-nl">İletişim</a>
+    <a href="/en/book/" class="kp-nl">Book</a>
+    <a href="/en/media/" class="kp-nl" style="color:#BA7517;">Media</a>
+    <a href="/guncellemeler/" class="kp-nl">Updates</a>
+    <a href="/gorusler/" class="kp-nl">Reviews</a>
+    <a href="/kaynakca/" class="kp-nl">Bibliography</a>
+    <a href="/iletisim/" class="kp-nl">Contact</a>
     <div class="kp-search-trigger" id="kpSearchTrigger">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
         </svg>
         <div class="kp-search-dropdown" id="kpSearchDropdown">
           <div class="kp-search-row">
-            <input type="text" id="kpSearchInput" class="kp-search-input" placeholder="Sitede ara..." autocomplete="off">
-            <button class="kp-search-btn" id="kpSearchBtn">Ara →</button>
+            <input type="text" id="kpSearchInput" class="kp-search-input" placeholder="Search the site..." autocomplete="off">
+            <button class="kp-search-btn" id="kpSearchBtn">Search →</button>
           </div>
         </div>
       </div>
@@ -46,17 +46,17 @@
           <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
         </svg>
         <div class="kp-lang-dropdown" id="kpLangDropdown">
-          <span class="kp-lang-opt kp-lang-opt-active">Türkçe</span>
-          <a href="/en/media/" class="kp-lang-opt">English</a>
+          <a href="/medya/" class="kp-lang-opt">Türkçe</a>
+          <span class="kp-lang-opt kp-lang-opt-active">English</span>
         </div>
       </div>
   </div>
 </div>
 
   <div class="kp-ch-bar">
-    <a href="/">Ana sayfa</a>
+    <a href="/en/">Home</a>
     <span>›</span>
-    <span class="kp-ch-current">Medya & Görseller</span>
+    <span class="kp-ch-current">Media & Images</span>
   </div>
 
   <div class="kp-bolum-layout">
@@ -65,42 +65,42 @@
 
       <div style="margin-bottom:28px;">
 <span class="kp-ch-badge" style="background:#BA751722;color:#BA7517;border:1px solid #BA751744;">Medya</span>
-<h1 class="kp-ch-title">Medya & Görseller</h1>
-<p style="font-size:17px;color:#1a1a1a;line-height:1.7;border-left:3px solid #BA7517;padding-left:16px;margin:20px 0 8px;font-style:italic;">Kitapta yer alan fotoğraflar ve görsel kaynaklar. Bölüm bazlı gruplandırılmıştır.</p>
+<h1 class="kp-ch-title">Media & Images</h1>
+<p style="font-size:17px;color:#1a1a1a;line-height:1.7;border-left:3px solid #BA7517;padding-left:16px;margin:20px 0 8px;font-style:italic;">Photographs and visual sources from the book, grouped by chapter.</p>
 <div class="kp-ch-rule"></div>
 </div>
 
       <!-- FİLTRE NAV -->
       <div style="display:flex;gap:6px;margin-bottom:28px;flex-wrap:wrap;">
-  <button class="kp-medya-filter-btn kp-medya-filter-active" onclick="filterMedya('tumu', this)">Tümü</button>
-  <button class="kp-medya-filter-btn" onclick="filterMedya('giris', this)">Giriş</button>
-  <button class="kp-medya-filter-btn" onclick="filterMedya('1', this)">Bölüm 1</button>
-  <button class="kp-medya-filter-btn" onclick="filterMedya('2', this)">Bölüm 2</button>
-  <button class="kp-medya-filter-btn" onclick="filterMedya('3', this)">Bölüm 3</button>
-  <button class="kp-medya-filter-btn" onclick="filterMedya('4', this)">Bölüm 4</button>
-  <button class="kp-medya-filter-btn" onclick="filterMedya('5', this)">Bölüm 5</button>
-  <button class="kp-medya-filter-btn" onclick="filterMedya('6', this)">Bölüm 6</button>
+  <button class="kp-medya-filter-btn kp-medya-filter-active" onclick="filterMedya('tumu', this)">All</button>
+  <button class="kp-medya-filter-btn" onclick="filterMedya('giris', this)">Introduction</button>
+  <button class="kp-medya-filter-btn" onclick="filterMedya('1', this)">Ch. 1</button>
+  <button class="kp-medya-filter-btn" onclick="filterMedya('2', this)">Ch. 2</button>
+  <button class="kp-medya-filter-btn" onclick="filterMedya('3', this)">Ch. 3</button>
+  <button class="kp-medya-filter-btn" onclick="filterMedya('4', this)">Ch. 4</button>
+  <button class="kp-medya-filter-btn" onclick="filterMedya('5', this)">Ch. 5</button>
+  <button class="kp-medya-filter-btn" onclick="filterMedya('6', this)">Ch. 6</button>
 </div>
 
 <!-- GİRİŞ — SONRADAN EKLENENLER -->
 <section class="kp-medya-bolum" id="giris-guncel" data-bolum="giris">
   <div class="kp-medya-bolum-baslik">
-    <span class="kp-medya-bolum-etiket">Giriş</span>
-    <h2 class="kp-medya-bolum-h2">16 Şubat 1969'a Giden Yol</h2>
+    <span class="kp-medya-bolum-etiket">Introduction</span>
+    <h2 class="kp-medya-bolum-h2">The Road to 16 February 1969</h2>
   </div>
-  <p style="font-size:13px;color:#aaa;font-style:italic;">Giriş bölümünde kitaba ait fotoğraf bulunmamaktadır.</p>
+  <p style="font-size:13px;color:#aaa;font-style:italic;">There are no photographs from the book in the Introduction.</p>
 
   <div class="kp-medya-bolum-baslik" id="giris-guncel-baslik">
-    <span class="kp-medya-bolum-etiket" style="background:#FFF8ED;color:#BA7517;border-color:#EFD9B0;">Giriş — Güncel</span>
-    <h5 class="kp-sec-label">Sonradan Eklenenler</h5>
+    <span class="kp-medya-bolum-etiket" style="background:#FFF8ED;color:#BA7517;border-color:#EFD9B0;">Introduction — Recent</span>
+    <h5 class="kp-sec-label">Recently Added</h5>
   </div>
   <div class="kp-masonry">
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/missouri-pul.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/missouri-pul.jpg" alt="Missouri Zırhlısı için bastırılan özel pul" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/missouri-pul.jpg" alt="Special postage stamp issued for the Missouri battleship" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Missouri Zırhlısı için bastırılan özel pul — 1946</span>
+          <span class="kp-masonry-caption">Special postage stamp issued for the Missouri battleship — 1946</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -108,9 +108,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/missouri-kiz-kulesi.png" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/missouri-kiz-kulesi.png" alt="Kız Kulesi'ne asılan Welcome Missouri pankartı" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/missouri-kiz-kulesi.png" alt="A "Welcome Missouri" banner hung on Kız Kulesi" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Kız Kulesi'ne asılan "Welcome Missouri" pankartı — 1946</span>
+          <span class="kp-masonry-caption">A "Welcome Missouri" banner hung on Kız Kulesi — 1946</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -118,9 +118,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/6.-Filo-Dolmabahce-Camiinde-Welcome-Mahyasi.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/6.-Filo-Dolmabahce-Camiinde-Welcome-Mahyasi.jpg" alt="Bezm-i Alem Valide Sultan Camii minareleri arasına asılan Welcome mahyası" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/6.-Filo-Dolmabahce-Camiinde-Welcome-Mahyasi.jpg" alt="A "Welcome" mahya hung between the minarets of Bezm-i Alem Valide Sultan Mosque" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Bezm-i Alem Valide Sultan Camii — "Welcome" mahyası — 1946</span>
+          <span class="kp-masonry-caption">Bezm-i Alem Valide Sultan Mosque — "Welcome" mahya — 1946</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -131,237 +131,237 @@
       <!-- BÖLÜM 1 -->
       <section class="kp-medya-bolum" id="bolum-1" data-bolum="1">
         <div class="kp-medya-bolum-baslik">
-          <span class="kp-medya-bolum-etiket">Bölüm 1</span>
-          <h2 class="kp-medya-bolum-h2">27 Mayıs 1960 Sonrası Politik Ortam</h2>
+          <span class="kp-medya-bolum-etiket">Chapter 1</span>
+          <h2 class="kp-medya-bolum-h2">The Political Climate After 27 May 1960</h2>
         </div>
         <div class="kp-masonry">
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/03/Resim-1-27-Mayis-1960-Havadis.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/03/Resim-1-27-Mayis-1960-Havadis.jpg" alt="27 Mayıs 1960 Havadis gazetesi" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/03/Resim-1-27-Mayis-1960-Havadis.jpg" alt="27 May 1960, Havadis newspaper" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">27 Mayıs 1960 Havadis gazetesi</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">27 May 1960, Havadis newspaper</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/03/Resim-2-20-Temmuz-1960-Cumhuriyet.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/03/Resim-2-20-Temmuz-1960-Cumhuriyet.jpg" alt="20 Temmuz 1960 Cumhuriyet" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/03/Resim-2-20-Temmuz-1960-Cumhuriyet.jpg" alt="20 July 1960, Cumhuriyet" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">20 Temmuz 1960 Cumhuriyet gazetesi</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">20 July 1960, Cumhuriyet newspaper</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/03/Resim-3-7-Agustos-1960-Cumhuriyet.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/03/Resim-3-7-Agustos-1960-Cumhuriyet.jpg" alt="7 Ağustos 1960 Cumhuriyet karikatürü" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/03/Resim-3-7-Agustos-1960-Cumhuriyet.jpg" alt="7 August 1960, Cumhuriyet cartoon" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">7 Ağustos 1960 Cumhuriyet — MBK karikatürü</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">7 August 1960, Cumhuriyet — MBK cartoon</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/03/Resim-4-29-Ekim-1960-Cumhuriyet.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/03/Resim-4-29-Ekim-1960-Cumhuriyet.jpg" alt="29 Ekim 1960 Cumhuriyet" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/03/Resim-4-29-Ekim-1960-Cumhuriyet.jpg" alt="29 October 1960, Cumhuriyet" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">29 Ekim 1960 Cumhuriyet gazetesi</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">29 October 1960, Cumhuriyet newspaper</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/03/Resim-5-Nevzat-Cicek-Sivas-Kampi.jpeg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/03/Resim-5-Nevzat-Cicek-Sivas-Kampi.jpeg" alt="Sivas Kampı" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/03/Resim-5-Nevzat-Cicek-Sivas-Kampi.jpeg" alt="Sivas Camp" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">Sivas Kampı (Nevzat Çiçek arşivi)</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">Sivas Camp (Nevzat Çiçek archive)</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/03/Resim-6-4-Agustos-1960-Cumhuriyet.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/03/Resim-6-4-Agustos-1960-Cumhuriyet.jpg" alt="4 Ağustos 1960 Cumhuriyet" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/03/Resim-6-4-Agustos-1960-Cumhuriyet.jpg" alt="4 August 1960, Cumhuriyet" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">4 Ağustos 1960 Cumhuriyet gazetesi</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">4 August 1960, Cumhuriyet newspaper</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/03/Resim-7-5-Agustos-1960-Cumhuriyet.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/03/Resim-7-5-Agustos-1960-Cumhuriyet.jpg" alt="5 Ağustos 1960 Cumhuriyet" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/03/Resim-7-5-Agustos-1960-Cumhuriyet.jpg" alt="5 August 1960, Cumhuriyet" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">5 Ağustos 1960 Cumhuriyet gazetesi</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">5 August 1960, Cumhuriyet newspaper</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/03/Resim-8-14-Kasim-1960-Cumhuriyet.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/03/Resim-8-14-Kasim-1960-Cumhuriyet.jpg" alt="14 Kasım 1960 Cumhuriyet" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/03/Resim-8-14-Kasim-1960-Cumhuriyet.jpg" alt="14 November 1960, Cumhuriyet" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">14 Kasım 1960 Cumhuriyet gazetesi</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">14 November 1960, Cumhuriyet newspaper</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/03/Resim-9-15-Kasim-1960-Cumhuriyet.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/03/Resim-9-15-Kasim-1960-Cumhuriyet.jpg" alt="15 Kasım 1960 Cumhuriyet" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/03/Resim-9-15-Kasim-1960-Cumhuriyet.jpg" alt="15 November 1960, Cumhuriyet" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">15 Kasım 1960 Cumhuriyet gazetesi</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">15 November 1960, Cumhuriyet newspaper</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/03/Resim-10-17-Kasim-1960-Cumhuriyet.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/03/Resim-10-17-Kasim-1960-Cumhuriyet.jpg" alt="17 Kasım 1960 Cumhuriyet" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/03/Resim-10-17-Kasim-1960-Cumhuriyet.jpg" alt="17 November 1960, Cumhuriyet" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">17 Kasım 1960 Cumhuriyet gazetesi</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">17 November 1960, Cumhuriyet newspaper</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/03/Resim-11-Son-Havadis-Talat-Aydemir.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/03/Resim-11-Son-Havadis-Talat-Aydemir.jpg" alt="Son Havadis — Talat Aydemir İhtilal Teşebbüsü" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/03/Resim-11-Son-Havadis-Talat-Aydemir.jpg" alt="Son Havadis — Talat Aydemir Coup Attempt" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">Son Havadis — Talat Aydemir İhtilal Teşebbüsü</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">Son Havadis — Talat Aydemir Coup Attempt</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/04/Resim-12-Komando-Kamplari.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/04/Resim-12-Komando-Kamplari.jpg" alt="Devlet dergisi — Komando Kampları" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/04/Resim-12-Komando-Kamplari.jpg" alt="Devlet magazine — Commando Camps" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">Devlet dergisi — Komando Kampları</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">Devlet magazine — Commando Camps</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/04/Resim-13-27-Ocak-1969-Cumhuriyet.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/04/Resim-13-27-Ocak-1969-Cumhuriyet.jpg" alt="27 Ocak 1969 Cumhuriyet" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/04/Resim-13-27-Ocak-1969-Cumhuriyet.jpg" alt="27 January 1969, Cumhuriyet" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">27 Ocak 1969 Cumhuriyet gazetesi</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">27 January 1969, Cumhuriyet newspaper</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/04/Resim-14-Komando-Kamplari-Grid-1.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/04/Resim-14-Komando-Kamplari-Grid-1.jpg" alt="Devlet dergisi kapağı" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/04/Resim-14-Komando-Kamplari-Grid-1.jpg" alt="Devlet magazine cover" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">Devlet dergisi kapağı (Komando Kampları)</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">Devlet magazine cover (Commando Camps)</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/04/Resim-15-Komando-Kamplari-Grid-2.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/04/Resim-15-Komando-Kamplari-Grid-2.jpg" alt="Milli Hareket dergisi kapağı" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/04/Resim-15-Komando-Kamplari-Grid-2.jpg" alt="Milli Hareket magazine cover" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">Milli Hareket dergisi kapağı</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">Milli Hareket magazine cover</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/04/Resim-16-Komando-Kamplari-Grid-3.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/04/Resim-16-Komando-Kamplari-Grid-3.jpg" alt="Devlet dergisi kapağı" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/04/Resim-16-Komando-Kamplari-Grid-3.jpg" alt="Devlet magazine cover" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">Devlet dergisi kapağı (Komandolar)</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">Devlet magazine cover (Commandos)</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/04/Resim-17-Komando-Kamplari-Grid-4.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/04/Resim-17-Komando-Kamplari-Grid-4.jpg" alt="Milli Hareket dergisi kapağı" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/04/Resim-17-Komando-Kamplari-Grid-4.jpg" alt="Milli Hareket magazine cover" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">Milli Hareket dergisi kapağı</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">Milli Hareket magazine cover</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/04/Resim-18-Komando-Kamplari-Kortej.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/04/Resim-18-Komando-Kamplari-Kortej.jpg" alt="Komando kortej yürüyüşü" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/04/Resim-18-Komando-Kamplari-Kortej.jpg" alt="Commando procession march" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">Komando kortej yürüyüşü</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">Commando procession march</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/04/Resim-19-6-Ocak-1969-Cumhuriyet.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/04/Resim-19-6-Ocak-1969-Cumhuriyet.jpg" alt="6 Ocak 1969 Cumhuriyet" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/04/Resim-19-6-Ocak-1969-Cumhuriyet.jpg" alt="6 January 1969, Cumhuriyet" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">6 Ocak 1969 Cumhuriyet gazetesi</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">6 January 1969, Cumhuriyet newspaper</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/04/Resim-20-MTTB-dortlu-grid-1.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/04/Resim-20-MTTB-dortlu-grid-1.jpg" alt="Birlik Vakfı 1995 Genel Kurulu 1" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/04/Resim-20-MTTB-dortlu-grid-1.jpg" alt="Birlik Vakfı 1995 General Assembly 1" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">Birlik Vakfı 1995 Genel Kurulu (1/4)</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">Birlik Vakfı 1995 General Assembly (1/4)</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/04/Resim-21-MTTB-dortlu-grid-2.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/04/Resim-21-MTTB-dortlu-grid-2.jpg" alt="Birlik Vakfı 1995 Genel Kurulu 2" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/04/Resim-21-MTTB-dortlu-grid-2.jpg" alt="Birlik Vakfı 1995 General Assembly 2" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">Birlik Vakfı 1995 Genel Kurulu (2/4)</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">Birlik Vakfı 1995 General Assembly (2/4)</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/04/Resim-22-MTTB-dortlu-grid-3.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/04/Resim-22-MTTB-dortlu-grid-3.jpg" alt="Birlik Vakfı 1995 Genel Kurulu 3" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/04/Resim-22-MTTB-dortlu-grid-3.jpg" alt="Birlik Vakfı 1995 General Assembly 3" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">Birlik Vakfı 1995 Genel Kurulu (3/4)</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">Birlik Vakfı 1995 General Assembly (3/4)</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
 
           <div class="kp-masonry-item">
             <a href="/wp-content/uploads/2026/04/Resim-23-MTTB-dortlu-grid-4.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-              <img src="/wp-content/uploads/2026/04/Resim-23-MTTB-dortlu-grid-4.jpg" alt="Birlik Vakfı 1995 Genel Kurulu 4" class="kp-masonry-img" loading="lazy">
+              <img src="/wp-content/uploads/2026/04/Resim-23-MTTB-dortlu-grid-4.jpg" alt="Birlik Vakfı 1995 General Assembly 4" class="kp-masonry-img" loading="lazy">
               <div class="kp-masonry-overlay">
-                <span class="kp-masonry-caption">Birlik Vakfı 1995 Genel Kurulu (4/4)</span>
-                <span class="kp-masonry-bolum-tag">Bölüm 1</span>
+                <span class="kp-masonry-caption">Birlik Vakfı 1995 General Assembly (4/4)</span>
+                <span class="kp-masonry-bolum-tag">Ch. 1</span>
               </div>
             </a>
           </div>
@@ -370,15 +370,15 @@
 
 <!-- BÖLÜM 1 — SONRADAN EKLENENLER -->
 <div class="kp-medya-bolum-baslik" id="bolum-1-guncel">
-  <span class="kp-medya-bolum-etiket" style="background:#FFF8ED;color:#BA7517;border-color:#EFD9B0;">Bölüm 1 — Güncel</span>
-  <h5 class="kp-sec-label">Sonradan Eklenenler</h5>
+  <span class="kp-medya-bolum-etiket" style="background:#FFF8ED;color:#BA7517;border-color:#EFD9B0;">Chapter 1 — Recent</span>
+  <h5 class="kp-sec-label">Recently Added</h5>
 </div>
 <div class="kp-masonry">
   <div class="kp-masonry-item">
     <a href="/wp-content/uploads/2026/05/MTTB-komunizmi-telin-mitingi.png" target="_blank" rel="noopener" class="kp-masonry-link">
-      <img src="/wp-content/uploads/2026/05/MTTB-komunizmi-telin-mitingi.png" alt="21 Mart 1966 Adalet gazetesi — Komünizmi Tel'in Mitingleri" class="kp-masonry-img" loading="lazy">
+      <img src="/wp-content/uploads/2026/05/MTTB-komunizmi-telin-mitingi.png" alt="21 March 1966, Adalet newspaper — Damning Communism Rallies" class="kp-masonry-img" loading="lazy">
       <div class="kp-masonry-overlay">
-        <span class="kp-masonry-caption">21 Mart 1966 Adalet gazetesi — Komünizmi Tel'in Mitingleri</span>
+        <span class="kp-masonry-caption">21 March 1966, Adalet newspaper — Damning Communism Rallies</span>
         <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
       </div>
     </a>
@@ -387,9 +387,9 @@
 
 <div class="kp-masonry-item">
     <a href="/wp-content/uploads/2026/05/abdullah-gul-hulusi-akar-necip-fazil-buyuk-dogu-kayseri.webp" target="_blank" rel="noopener" class="kp-masonry-link">
-      <img src="/wp-content/uploads/2026/05/abdullah-gul-hulusi-akar-necip-fazil-buyuk-dogu-kayseri.webp" alt="Necip Fazıl, Abdullah Gül ve Hulusi Akar — Kayseri Büyük Doğu Cemiyeti, 1968-1969" class="kp-masonry-img" loading="lazy">
+      <img src="/wp-content/uploads/2026/05/abdullah-gul-hulusi-akar-necip-fazil-buyuk-dogu-kayseri.webp" alt="Necip Fazıl, Abdullah Gül, and Hulusi Akar — Kayseri Büyük Doğu Cemiyeti, 1968–1969" class="kp-masonry-img" loading="lazy">
       <div class="kp-masonry-overlay">
-        <span class="kp-masonry-caption">Necip Fazıl, Abdullah Gül ve Hulusi Akar — Kayseri Büyük Doğu Cemiyeti, 1968-1969</span>
+        <span class="kp-masonry-caption">Necip Fazıl, Abdullah Gül, and Hulusi Akar — Kayseri Büyük Doğu Cemiyeti, 1968–1969</span>
         <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
       </div>
     </a>
@@ -398,9 +398,9 @@
 
 <div class="kp-masonry-item">
     <a href="/wp-content/uploads/2026/05/erdogan-diploma-ornegi.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-      <img src="/wp-content/uploads/2026/05/erdogan-diploma-ornegi.jpg" alt="Recep Tayyip Erdoğan'ın tartışılan diploması" class="kp-masonry-img" loading="lazy">
+      <img src="/wp-content/uploads/2026/05/erdogan-diploma-ornegi.jpg" alt="Recep Tayyip Erdoğan's disputed diploma" class="kp-masonry-img" loading="lazy">
       <div class="kp-masonry-overlay">
-        <span class="kp-masonry-caption">Recep Tayyip Erdoğan'ın tartışılan diploması</span>
+        <span class="kp-masonry-caption">Recep Tayyip Erdoğan's disputed diploma</span>
         <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
       </div>
     </a>
@@ -409,9 +409,9 @@
 
 <div class="kp-masonry-item">
     <a href="/wp-content/uploads/2026/05/recep-tayyip-erdogan-imam-hatip-munazara-1972.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-      <img src="/wp-content/uploads/2026/05/recep-tayyip-erdogan-imam-hatip-munazara-1972.jpg" alt="Genç Recep Tayyip Erdoğan — İmam Hatip münazara etkinliği, 1972" class="kp-masonry-img" loading="lazy">
+      <img src="/wp-content/uploads/2026/05/recep-tayyip-erdogan-imam-hatip-munazara-1972.jpg" alt="Young Recep Tayyip Erdoğan — İmam Hatip debate event, 1972" class="kp-masonry-img" loading="lazy">
       <div class="kp-masonry-overlay">
-        <span class="kp-masonry-caption">Genç Recep Tayyip Erdoğan — İmam Hatip münazara etkinliği, 1972</span>
+        <span class="kp-masonry-caption">Young Recep Tayyip Erdoğan — İmam Hatip debate event, 1972</span>
         <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
       </div>
     </a>
@@ -419,9 +419,9 @@
 
   <div class="kp-masonry-item">
     <a href="/wp-content/uploads/2026/05/bizim-anadolu-17-ocak-1972-erdogan-haberi.png" target="_blank" rel="noopener" class="kp-masonry-link">
-      <img src="/wp-content/uploads/2026/05/bizim-anadolu-17-ocak-1972-erdogan-haberi.png" alt="17 Ocak 1972 Bizim Anadolu gazetesi — Erdoğan haberi" class="kp-masonry-img" loading="lazy">
+      <img src="/wp-content/uploads/2026/05/bizim-anadolu-17-ocak-1972-erdogan-haberi.png" alt="17 January 1972, Bizim Anadolu newspaper — News item on Erdoğan" class="kp-masonry-img" loading="lazy">
       <div class="kp-masonry-overlay">
-        <span class="kp-masonry-caption">17 Ocak 1972 Bizim Anadolu — Erdoğan haberi</span>
+        <span class="kp-masonry-caption">17 January 1972, Bizim Anadolu — News item on Erdoğan</span>
         <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
       </div>
     </a>
@@ -430,9 +430,9 @@
 
 <div class="kp-masonry-item">
     <a href="/wp-content/uploads/2026/05/Erdogan-MTTB.png" target="_blank" rel="noopener" class="kp-masonry-link">
-      <img src="/wp-content/uploads/2026/05/Erdogan-MTTB.png" alt="Erdoğan — MTTB etkinliği, 1965 sonrası" class="kp-masonry-img" loading="lazy">
+      <img src="/wp-content/uploads/2026/05/Erdogan-MTTB.png" alt="Erdoğan — MTTB event, after 1965" class="kp-masonry-img" loading="lazy">
       <div class="kp-masonry-overlay">
-        <span class="kp-masonry-caption">Erdoğan — MTTB etkinliği, 1965 sonrası</span>
+        <span class="kp-masonry-caption">Erdoğan — MTTB event, after 1965</span>
         <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
       </div>
     </a>
@@ -441,9 +441,9 @@
 
 <div class="kp-masonry-item">
     <a href="/wp-content/uploads/2026/05/Turkes-Komando-Hurriyet-1969-01-10.png" target="_blank" rel="noopener" class="kp-masonry-link">
-      <img src="/wp-content/uploads/2026/05/Turkes-Komando-Hurriyet-1969-01-10.png" alt="Hürriyet 10 Ocak 1969 — Türkeş: Komandoları destekliyorum" class="kp-masonry-img" loading="lazy">
+      <img src="/wp-content/uploads/2026/05/Turkes-Komando-Hurriyet-1969-01-10.png" alt="Hürriyet, 10 January 1969 — Türkeş: "I support the commandos"" class="kp-masonry-img" loading="lazy">
       <div class="kp-masonry-overlay">
-        <span class="kp-masonry-caption">Hürriyet 10 Ocak 1969 — Türkeş: "Komandoları destekliyorum. Çünkü onları biz kurduk ve eğittik."</span>
+        <span class="kp-masonry-caption">Hürriyet, 10 January 1969 — Türkeş: "I support the commandos. Because we founded and trained them."</span>
         <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
       </div>
     </a>
@@ -452,9 +452,9 @@
 
 <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/Turkes-Komando-Gunaydin-1969-07-30.png" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/Turkes-Komando-Gunaydin-1969-07-30.png" alt="Günaydın 30 Temmuz 1969 — Türkeş'in hedefi 100 bin komando" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/Turkes-Komando-Gunaydin-1969-07-30.png" alt="Günaydın, 30 July 1969 — Türkeş's target: 100,000 commandos" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Günaydın, 30 Temmuz 1969 — Türkeş'in hedefi 100 bin komando</span>
+          <span class="kp-masonry-caption">Günaydın, 30 July 1969 — Türkeş's target: 100,000 commandos</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -462,9 +462,9 @@
 
 <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/Komando-Tercuman-1969-01-10.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/Komando-Tercuman-1969-01-10.jpg" alt="Tercüman 10 Ocak 1969 — Komandoların intikam söylemleri" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/Komando-Tercuman-1969-01-10.jpg" alt="Tercüman, 10 January 1969 — The commandos' "revenge" rhetoric" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Tercüman, 10 Ocak 1969 — Komandoların "intikam" söylemleri</span>
+          <span class="kp-masonry-caption">Tercüman, 10 January 1969 — The commandos' "revenge" rhetoric</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -472,9 +472,9 @@
 
 <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/Turkes-Komando-Kamplari-1969-01-13-Tercuman.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/Turkes-Komando-Kamplari-1969-01-13-Tercuman.jpg" alt="Tercüman 13 Ocak 1969 — Türkeş komandoların masumiyetini savunuyor" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/Turkes-Komando-Kamplari-1969-01-13-Tercuman.jpg" alt="Tercüman, 13 January 1969 — Türkeş defends the commandos' innocence" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Tercüman, 13 Ocak 1969 — Türkeş komandoların masumiyetini savunuyor</span>
+          <span class="kp-masonry-caption">Tercüman, 13 January 1969 — Türkeş defends the commandos' innocence</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -482,9 +482,9 @@
 
   <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/Komando-Hurriyet-1969-07-23.png" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/Komando-Hurriyet-1969-07-23.png" alt="Komando kampı eğitimi — 1969" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/Komando-Hurriyet-1969-07-23.png" alt="Commando camp training — 1969" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Komando kampı eğitimi — 1969</span>
+          <span class="kp-masonry-caption">Commando camp training — 1969</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -492,9 +492,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/Komando-Koye-el-attilar.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/Komando-Koye-el-attilar.jpg" alt="Komandolar köylere el attı" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/Komando-Koye-el-attilar.jpg" alt="Commandos raided villages" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Komandolar köylere el attı</span>
+          <span class="kp-masonry-caption">Commandos raided villages</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -502,9 +502,9 @@
 
 <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/Komando-Dokuz-Isik-Yuruyusu-2.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/Komando-Dokuz-Isik-Yuruyusu-2.jpg" alt="Dokuz Işık Yürüyüşü — Komandolar Avcı Hattında, 1969" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/Komando-Dokuz-Isik-Yuruyusu-2.jpg" alt=""Nine Lights March" — Commandos in Skirmish Line Formation, 1969" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">"Dokuz Işık Yürüyüşü" — Komandolar Avcı Hattında, 1969</span>
+          <span class="kp-masonry-caption">"Nine Lights March" — Commandos in Skirmish Line Formation, 1969</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -512,9 +512,9 @@
 
 <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/Seher-Vakti-Sayi-5-1970-03-15.png" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/Seher-Vakti-Sayi-5-1970-03-15.png" alt="Seher Vakti Sayı 5 — 15 Mart 1970 kapağı" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/Seher-Vakti-Sayi-5-1970-03-15.png" alt="Seher Vakti, No. 5 — 15 March 1970 cover" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Seher Vakti, Sayı 5 — 15 Mart 1970</span>
+          <span class="kp-masonry-caption">Seher Vakti, No. 5 — 15 March 1970</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -522,9 +522,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/Seher-Vakti-Sayi-22-1971-07-01.png" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/Seher-Vakti-Sayi-22-1971-07-01.png" alt="Seher Vakti Sayı 22 — 1 Temmuz 1971 kapağı" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/Seher-Vakti-Sayi-22-1971-07-01.png" alt="Seher Vakti, No. 22 — 1 July 1971 cover" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Seher Vakti, Sayı 22 — 1 Temmuz 1971</span>
+          <span class="kp-masonry-caption">Seher Vakti, No. 22 — 1 July 1971</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -532,9 +532,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/Seher-Vakti-Sayi-10-1970-08-01.png" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/Seher-Vakti-Sayi-10-1970-08-01.png" alt="Seher Vakti Sayı 10 — 1 Ağustos 1970 kapağı" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/Seher-Vakti-Sayi-10-1970-08-01.png" alt="Seher Vakti, No. 10 — 1 August 1970 cover" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Seher Vakti, Sayı 10 kapak — 1 Ağustos 1970</span>
+          <span class="kp-masonry-caption">Seher Vakti, No. 10, cover — 1 August 1970</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -542,9 +542,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/Seher-Vakti-Sayi-10-2-1970-08-01.png" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/Seher-Vakti-Sayi-10-2-1970-08-01.png" alt="Seher Vakti Sayı 10 — iç sayfalar" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/Seher-Vakti-Sayi-10-2-1970-08-01.png" alt="Seher Vakti, No. 10 — inside pages" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Seher Vakti, Sayı 10 iç sayfalar — 1 Ağustos 1970</span>
+          <span class="kp-masonry-caption">Seher Vakti, No. 10, inside pages — 1 August 1970</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -552,9 +552,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/Seher-Vakti-Sayi-15-1-1970-12-01.png" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/Seher-Vakti-Sayi-15-1-1970-12-01.png" alt="Seher Vakti Sayı 15 — 1 Aralık 1970 kapağı" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/Seher-Vakti-Sayi-15-1-1970-12-01.png" alt="Seher Vakti, No. 15 — 1 December 1970 cover" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Seher Vakti, Sayı 15 kapak — 1 Aralık 1970</span>
+          <span class="kp-masonry-caption">Seher Vakti, No. 15, cover — 1 December 1970</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -562,9 +562,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/Seher-Vakti-Sayi-15-2-1970-12-01.png" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/Seher-Vakti-Sayi-15-2-1970-12-01.png" alt="Seher Vakti Sayı 15 — iç sayfalar" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/Seher-Vakti-Sayi-15-2-1970-12-01.png" alt="Seher Vakti, No. 15 — inside pages" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Seher Vakti, Sayı 15 iç sayfalar — 1 Aralık 1970</span>
+          <span class="kp-masonry-caption">Seher Vakti, No. 15, inside pages — 1 December 1970</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -577,21 +577,21 @@
      <!-- BÖLÜM 2 -->
 <section class="kp-medya-bolum" id="bolum-2" data-bolum="2">
   <div class="kp-medya-bolum-baslik">
-    <span class="kp-medya-bolum-etiket">Bölüm 2</span>
-    <h2 class="kp-medya-bolum-h2">Kanlı Pazar'a Doğru</h2>
+    <span class="kp-medya-bolum-etiket">Chapter 2</span>
+    <h2 class="kp-medya-bolum-h2">Toward Kanlı Pazar</h2>
   </div>
-  <p style="font-size:13px;color:#aaa;font-style:italic;">Bölüm 2'de kitaba ait fotoğraf bulunmamaktadır.</p>
+  <p style="font-size:13px;color:#aaa;font-style:italic;">There are no photographs from the book in Chapter 2.</p>
 
   <div class="kp-medya-bolum-baslik" id="bolum-2-guncel">
-    <span class="kp-medya-bolum-etiket" style="background:#FFF8ED;color:#BA7517;border-color:#EFD9B0;">Bölüm 2 — Güncel</span>
-    <h5 class="kp-sec-label">Sonradan Eklenenler</h5>
+    <span class="kp-medya-bolum-etiket" style="background:#FFF8ED;color:#BA7517;border-color:#EFD9B0;">Chapter 2 — Recent</span>
+    <h5 class="kp-sec-label">Recently Added</h5>
   </div>
   <div class="kp-masonry">
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-24-Tam-Bagimsiz-Turkiye-Yuruyusu.png" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-24-Tam-Bagimsiz-Turkiye-Yuruyusu.png" alt="Tam Bağımsız Türkiye İçin Mustafa Kemal Yürüyüşü - 1968" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-24-Tam-Bagimsiz-Turkiye-Yuruyusu.png" alt="Mustafa Kemal March for a Fully Independent Turkey — 1968" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Tam Bağımsız Türkiye İçin Mustafa Kemal Yürüyüşü-1968</span>
+          <span class="kp-masonry-caption">Mustafa Kemal March for a Fully Independent Turkey — 1968</span>
           <span class="kp-masonry-bolum-tag">📎 18 Nisan 2026</span>
         </div>
       </a>
@@ -599,9 +599,9 @@
 
 <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/milliyet-18-temmuz-1968-6-filo-protestolari.png" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/milliyet-18-temmuz-1968-6-filo-protestolari.png" alt="18 Temmuz 1968 Milliyet — 6. Filo protestoları" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/milliyet-18-temmuz-1968-6-filo-protestolari.png" alt="18 July 1968, Milliyet — Sixth Fleet protests" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">18 Temmuz 1968 Milliyet — 6. Filo protestoları</span>
+          <span class="kp-masonry-caption">18 July 1968, Milliyet — Sixth Fleet protests</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -609,9 +609,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/harun-karadeniz-taksim-konusma-17-temmuz-1968.webp" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/harun-karadeniz-taksim-konusma-17-temmuz-1968.webp" alt="Harun Karadeniz — Taksim konuşması, 17 Temmuz 1968" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/harun-karadeniz-taksim-konusma-17-temmuz-1968.webp" alt="Harun Karadeniz — Speech in Taksim, 17 July 1968" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Harun Karadeniz — Taksim konuşması, 17 Temmuz 1968</span>
+          <span class="kp-masonry-caption">Harun Karadeniz — Speech in Taksim, 17 July 1968</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -619,9 +619,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/17-temmuz-1968-6-filo-protestolari-6.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/17-temmuz-1968-6-filo-protestolari-6.jpg" alt="17 Temmuz 1968 — 6. Filo protestoları" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/17-temmuz-1968-6-filo-protestolari-6.jpg" alt="17 July 1968 — Sixth Fleet protests" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">17 Temmuz 1968 — Dolmabahçe 6. Filo protestoları</span>
+          <span class="kp-masonry-caption">17 July 1968 — Sixth Fleet protests at Dolmabahçe</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -629,9 +629,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/17-temmuz-1968-6-filo-protestolari-5.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/17-temmuz-1968-6-filo-protestolari-5.jpg" alt="17 Temmuz 1968 — 6. Filo protestoları" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/17-temmuz-1968-6-filo-protestolari-5.jpg" alt="17 July 1968 — Sixth Fleet protests" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">17 Temmuz 1968 — Dolmabahçe 6. Filo protestoları</span>
+          <span class="kp-masonry-caption">17 July 1968 — Sixth Fleet protests at Dolmabahçe</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -639,9 +639,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/17-temmuz-1968-6-filo-protestolari-4.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/17-temmuz-1968-6-filo-protestolari-4.jpg" alt="17 Temmuz 1968 — 6. Filo protestoları" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/17-temmuz-1968-6-filo-protestolari-4.jpg" alt="17 July 1968 — Sixth Fleet protests" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">17 Temmuz 1968 — Dolmabahçe 6. Filo protestoları</span>
+          <span class="kp-masonry-caption">17 July 1968 — Sixth Fleet protests at Dolmabahçe</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -649,9 +649,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/17-temmuz-1968-6-filo-protestolari-3.webp" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/17-temmuz-1968-6-filo-protestolari-3.webp" alt="17 Temmuz 1968 — 6. Filo protestoları" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/17-temmuz-1968-6-filo-protestolari-3.webp" alt="17 July 1968 — Sixth Fleet protests" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">17 Temmuz 1968 — Dolmabahçe 6. Filo protestoları</span>
+          <span class="kp-masonry-caption">17 July 1968 — Sixth Fleet protests at Dolmabahçe</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -659,9 +659,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/17-temmuz-1968-6-filo-protestolari-2.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/17-temmuz-1968-6-filo-protestolari-2.jpg" alt="17 Temmuz 1968 — 6. Filo protestoları" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/17-temmuz-1968-6-filo-protestolari-2.jpg" alt="17 July 1968 — Sixth Fleet protests" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">17 Temmuz 1968 — Dolmabahçe 6. Filo protestoları</span>
+          <span class="kp-masonry-caption">17 July 1968 — Sixth Fleet protests at Dolmabahçe</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -669,9 +669,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/17-temmuz-1968-6-filo-protestolari-1-18-Temmuz-1968-Tercuman.jpeg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/17-temmuz-1968-6-filo-protestolari-1-18-Temmuz-1968-Tercuman.jpeg" alt="18 Temmuz 1968 Tercüman — 6. Filo protestoları" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/17-temmuz-1968-6-filo-protestolari-1-18-Temmuz-1968-Tercuman.jpeg" alt="18 July 1968, Tercüman — Sixth Fleet protests" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">18 Temmuz 1968 Tercüman — 6. Filo protestoları</span>
+          <span class="kp-masonry-caption">18 July 1968, Tercüman — Sixth Fleet protests</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -680,9 +680,9 @@
 
 <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/deniz-gezmis-istanbul-universitesi-yuruyusu-bir-2-haziran-1968.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/deniz-gezmis-istanbul-universitesi-yuruyusu-bir-2-haziran-1968.jpg" alt="Deniz Gezmiş — İstanbul Üniversitesi yürüyüşü, 2 Haziran 1968" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/deniz-gezmis-istanbul-universitesi-yuruyusu-bir-2-haziran-1968.jpg" alt="Deniz Gezmiş — Istanbul University march, 2 June 1968" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Deniz Gezmiş — İstanbul Üniversitesi yürüyüşü, 2 Haziran 1968</span>
+          <span class="kp-masonry-caption">Deniz Gezmiş — Istanbul University march, 2 June 1968</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -690,9 +690,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/deniz-gezmis-istanbul-universitesi-yuruyusu-iki-2-haziran-1968.jpeg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/deniz-gezmis-istanbul-universitesi-yuruyusu-iki-2-haziran-1968.jpeg" alt="Deniz Gezmiş — İstanbul Üniversitesi yürüyüşü, 2 Haziran 1968" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/deniz-gezmis-istanbul-universitesi-yuruyusu-iki-2-haziran-1968.jpeg" alt="Deniz Gezmiş — Istanbul University march, 2 June 1968" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Deniz Gezmiş — İstanbul Üniversitesi yürüyüşü, 2 Haziran 1968</span>
+          <span class="kp-masonry-caption">Deniz Gezmiş — Istanbul University march, 2 June 1968</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -700,9 +700,9 @@
 
 <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/6-filo-protestosu-amerikan-subayi.png" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/6-filo-protestosu-amerikan-subayi.png" alt="6. Filo protestoları — üzerine çamur atılmış Amerikan askeri" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/6-filo-protestosu-amerikan-subayi.png" alt="Sixth Fleet protests — an American soldier splattered with mud" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">6. Filo protestoları — üzerine çamur atılmış Amerikan askeri</span>
+          <span class="kp-masonry-caption">Sixth Fleet protests — an American soldier splattered with mud</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -710,9 +710,9 @@
 
 <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/6-filo-protesto-dilekcesi-1968.png" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/6-filo-protesto-dilekcesi-1968.png" alt="17 Temmuz 1968 — Cumhurbaşkanı Sunay'a gönderilen dilekçe" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/6-filo-protesto-dilekcesi-1968.png" alt="17 July 1968 — Petition sent to President Sunay" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">17 Temmuz 1968 — Cumhurbaşkanı Sunay'a gönderilen dilekçe</span>
+          <span class="kp-masonry-caption">17 July 1968 — Petition sent to President Sunay</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -720,9 +720,9 @@
 
 <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/Inonu-Yeni-bir-dunya-kurulur.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/Inonu-Yeni-bir-dunya-kurulur.jpg" alt="İnönü — Yeni bir dünya kurulur" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/Inonu-Yeni-bir-dunya-kurulur.jpg" alt="İnönü — "A new world will be built"" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">İnönü — "Yeni bir dünya kurulur", 1964</span>
+          <span class="kp-masonry-caption">İnönü — "A new world will be built," 1964</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -734,27 +734,27 @@
      <!-- BÖLÜM 3 -->
 <section class="kp-medya-bolum" id="bolum-3" data-bolum="3">
   <div class="kp-medya-bolum-baslik">
-    <span class="kp-medya-bolum-etiket">Bölüm 3</span>
-    <h2 class="kp-medya-bolum-h2"><em>Bugün</em> Gazetesi ve "Kanlı Pazar"</h2>
+    <span class="kp-medya-bolum-etiket">Chapter 3</span>
+    <h2 class="kp-medya-bolum-h2"><em>Bugün</em> Newspaper and "Kanlı Pazar"</h2>
   </div>
   <div class="kp-masonry">
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-25-Bugun-Kizillari-Bogmanin-Vakti-Geldi.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-25-Bugun-Kizillari-Bogmanin-Vakti-Geldi.jpg" alt="Bugün gazetesi manşeti" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-25-Bugun-Kizillari-Bogmanin-Vakti-Geldi.jpg" alt="Bugün newspaper headline" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption"><em>Bugün</em> gazetesi manşeti</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 3</span>
+          <span class="kp-masonry-caption"><em>Bugün</em> newspaper headline</span>
+          <span class="kp-masonry-bolum-tag">Ch. 3</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-26-Bugun-Toplu-Namaz-1.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-26-Bugun-Toplu-Namaz-1.jpg" alt="Bugün — Toplu namaz manşeti" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-26-Bugun-Toplu-Namaz-1.jpg" alt="Bugün — Communal prayer headline" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption"><em>Bugün</em> — Toplu namaz manşeti</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 3</span>
+          <span class="kp-masonry-caption"><em>Bugün</em> — Communal prayer headline</span>
+          <span class="kp-masonry-bolum-tag">Ch. 3</span>
         </div>
       </a>
     </div>
@@ -763,128 +763,128 @@
       <a href="/wp-content/uploads/2026/04/Resim-27-Necip-Fazil.png" target="_blank" rel="noopener" class="kp-masonry-link">
         <img src="/wp-content/uploads/2026/04/Resim-27-Necip-Fazil.png" alt="Necip Fazıl Kısakürek — Amerikayı Tutmak Zoru" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Necip Fazıl — "Amerikayı Tutmak Zoru", 10 Ocak 1969</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 3</span>
+          <span class="kp-masonry-caption">Necip Fazıl — "Amerikayı Tutmak Zoru," 10 January 1969</span>
+          <span class="kp-masonry-bolum-tag">Ch. 3</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-28-Bugun-Antikomunizm-1.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-28-Bugun-Antikomunizm-1.jpg" alt="Bugün — Antikomünist manşetler 1" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-28-Bugun-Antikomunizm-1.jpg" alt="Bugün — Anticommunist headlines 1" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption"><em>Bugün</em> — Antikomünist manşetler (1/3)</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 3</span>
+          <span class="kp-masonry-caption"><em>Bugün</em> — Anticommunist headlines (1/3)</span>
+          <span class="kp-masonry-bolum-tag">Ch. 3</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-29-Bugun-Antikomunizm-2.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-29-Bugun-Antikomunizm-2.jpg" alt="Bugün — Antikomünist manşetler 2" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-29-Bugun-Antikomunizm-2.jpg" alt="Bugün — Anticommunist headlines 2" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption"><em>Bugün</em> — Antikomünist manşetler (2/3)</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 3</span>
+          <span class="kp-masonry-caption"><em>Bugün</em> — Anticommunist headlines (2/3)</span>
+          <span class="kp-masonry-bolum-tag">Ch. 3</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-30-Bugun-Antikomunizm-3.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-30-Bugun-Antikomunizm-3.jpg" alt="Bugün — Antikomünist manşetler 3" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-30-Bugun-Antikomunizm-3.jpg" alt="Bugün — Anticommunist headlines 3" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption"><em>Bugün</em> — Antikomünist manşetler (3/3)</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 3</span>
+          <span class="kp-masonry-caption"><em>Bugün</em> — Anticommunist headlines (3/3)</span>
+          <span class="kp-masonry-bolum-tag">Ch. 3</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-31-Bugun-Hitler-1.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-31-Bugun-Hitler-1.jpg" alt="Bugün — Hitler yazı dizisi 1" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-31-Bugun-Hitler-1.jpg" alt="Bugün — Hitler article series 1" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption"><em>Bugün</em> — Hitler yazı dizisi (1/2)</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 3</span>
+          <span class="kp-masonry-caption"><em>Bugün</em> — Hitler article series (1/2)</span>
+          <span class="kp-masonry-bolum-tag">Ch. 3</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-32-Bugun-Hitler-2.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-32-Bugun-Hitler-2.jpg" alt="Bugün — Hitler yazı dizisi 2" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-32-Bugun-Hitler-2.jpg" alt="Bugün — Hitler article series 2" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption"><em>Bugün</em> — Hitler yazı dizisi (2/2)</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 3</span>
+          <span class="kp-masonry-caption"><em>Bugün</em> — Hitler article series (2/2)</span>
+          <span class="kp-masonry-bolum-tag">Ch. 3</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-33-Bugun-provokasyon-1.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-33-Bugun-provokasyon-1.jpg" alt="Bugün — Başörtüsü manşeti 1" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-33-Bugun-provokasyon-1.jpg" alt="Bugün — "Headscarf" headline 1" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption"><em>Bugün</em> — "Başörtüsü" Manşetleri 1</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 3</span>
+          <span class="kp-masonry-caption"><em>Bugün</em> — "Headscarf" Headlines 1</span>
+          <span class="kp-masonry-bolum-tag">Ch. 3</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-34-Bugun-Provokasyon-2.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-34-Bugun-Provokasyon-2.jpg" alt="Bugün — Başörtüsü manşeti 2" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-34-Bugun-Provokasyon-2.jpg" alt="Bugün — "Headscarf" headline 2" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption"><em>Bugün</em> — "Başörtüsü" Manşetleri 2</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 3</span>
+          <span class="kp-masonry-caption"><em>Bugün</em> — "Headscarf" Headlines 2</span>
+          <span class="kp-masonry-bolum-tag">Ch. 3</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-35-Bugun-Sagin-Hamisi.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-35-Bugun-Sagin-Hamisi.jpg" alt="Bugün — Sol/Sağ karikatürü" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-35-Bugun-Sagin-Hamisi.jpg" alt="Bugün — Left/right cartoon" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
           <span class="kp-masonry-caption"><em>Bugün</em> — Sol/Sağ karikatürü</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 3</span>
+          <span class="kp-masonry-bolum-tag">Ch. 3</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-36-Bugun-Grid-1.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-36-Bugun-Grid-1.jpg" alt="Bugün — Cihat çağrısı 1" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-36-Bugun-Grid-1.jpg" alt="Bugün — Jihad-call article 1" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption"><em>Bugün</em> — Cihat çağrısı yazıları (1/4)</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 3</span>
+          <span class="kp-masonry-caption"><em>Bugün</em> — Jihad-call articles (1/4)</span>
+          <span class="kp-masonry-bolum-tag">Ch. 3</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-37-Bugun-Grid-2.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-37-Bugun-Grid-2.jpg" alt="Bugün — Cihat çağrısı 2" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-37-Bugun-Grid-2.jpg" alt="Bugün — Jihad-call article 2" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption"><em>Bugün</em> — Cihat çağrısı yazıları (2/4)</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 3</span>
+          <span class="kp-masonry-caption"><em>Bugün</em> — Jihad-call articles (2/4)</span>
+          <span class="kp-masonry-bolum-tag">Ch. 3</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-38-Bugun-Grid-3.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-38-Bugun-Grid-3.jpg" alt="Bugün — Cihat çağrısı 3" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-38-Bugun-Grid-3.jpg" alt="Bugün — Jihad-call article 3" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption"><em>Bugün</em> — Cihat çağrısı yazıları (3/4)</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 3</span>
+          <span class="kp-masonry-caption"><em>Bugün</em> — Jihad-call articles (3/4)</span>
+          <span class="kp-masonry-bolum-tag">Ch. 3</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-39-Bugun-Grid-4.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-39-Bugun-Grid-4.jpg" alt="Bugün — Cihat çağrısı 4" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-39-Bugun-Grid-4.jpg" alt="Bugün — Jihad-call article 4" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption"><em>Bugün</em> — Cihat çağrısı yazıları (4/4)</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 3</span>
+          <span class="kp-masonry-caption"><em>Bugün</em> — Jihad-call articles (4/4)</span>
+          <span class="kp-masonry-bolum-tag">Ch. 3</span>
         </div>
       </a>
     </div>
@@ -893,16 +893,16 @@
 <!-- BÖLÜM 3 — SONRADAN EKLENENLER -->
   <section class="kp-medya-bolum" id="bolum-3-guncel" data-bolum="3">
     <div class="kp-medya-bolum-baslik">
-      <span class="kp-medya-bolum-etiket" style="background:#FFF8ED;color:#BA7517;border-color:#EFD9B0;">Bölüm 3 — Güncel</span>
-      <h5 class="kp-sec-label">Sonradan Eklenenler</h5>
+      <span class="kp-medya-bolum-etiket" style="background:#FFF8ED;color:#BA7517;border-color:#EFD9B0;">Chapter 3 — Recent</span>
+      <h5 class="kp-sec-label">Recently Added</h5>
     </div>
     <div class="kp-masonry">
 
 <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/Fedai-dergisi-—-Subat-1969-—-Tarihin-Kaydettigi-Uc-Buyuk-Yahudi-Dusmani.png" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/Fedai-dergisi-—-Subat-1969-—-Tarihin-Kaydettigi-Uc-Buyuk-Yahudi-Dusmani.png" alt="Fedai dergisi Şubat 1969 — Tarihin Kaydettiği Üç Büyük Yahudi Düşmanı" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/Fedai-dergisi-—-Subat-1969-—-Tarihin-Kaydettigi-Uc-Buyuk-Yahudi-Dusmani.png" alt="Fedai magazine, February 1969 — The Three Great Enemies of the Jews Recorded by History" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Fedai dergisi, Şubat 1969 — "Tarihin Kaydettiği Üç Büyük Yahudi Düşmanı"</span>
+          <span class="kp-masonry-caption">Fedai magazine, February 1969 — "The Three Great Enemies of the Jews Recorded by History"</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -910,9 +910,9 @@
       
       <div class="kp-masonry-item">
         <a href="/wp-content/uploads/2026/05/kanli-pazar-eygi-ozel-harp-pekin.png" target="_blank" rel="noopener" class="kp-masonry-link">
-          <img src="/wp-content/uploads/2026/05/kanli-pazar-eygi-ozel-harp-pekin.png" alt="Eygi — Özel Harp Dairesi iddiası" class="kp-masonry-img" loading="lazy">
+          <img src="/wp-content/uploads/2026/05/kanli-pazar-eygi-ozel-harp-pekin.png" alt="Eygi — the Special Warfare Department claim" class="kp-masonry-img" loading="lazy">
           <div class="kp-masonry-overlay">
-            <span class="kp-masonry-caption">Eygi'nin Özel Harp Dairesi bağlantısı iddiası — Tele1 TV, 10 Aralık 2018</span>
+            <span class="kp-masonry-caption">The claim of Eygi's Special Warfare Department connection — Tele1 TV, 10 December 2018</span>
             <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
           </div>
         </a>
@@ -924,127 +924,127 @@
      <!-- BÖLÜM 4 — KİTAPTAKİLER -->
 <section class="kp-medya-bolum" id="bolum-4" data-bolum="4">
   <div class="kp-medya-bolum-baslik">
-    <span class="kp-medya-bolum-etiket">Bölüm 4</span>
-    <h2 class="kp-medya-bolum-h2">Adım Adım Kanlı Pazar</h2>
+    <span class="kp-medya-bolum-etiket">Chapter 4</span>
+    <h2 class="kp-medya-bolum-h2">Kanlı Pazar: A Step-by-Step Account</h2>
   </div>
   <div class="kp-masonry">
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-40-8-Subat-1969-Cumhuriyet.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-40-8-Subat-1969-Cumhuriyet.jpg" alt="8 Şubat 1969 Cumhuriyet" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-40-8-Subat-1969-Cumhuriyet.jpg" alt="8 February 1969, Cumhuriyet" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">8 Şubat 1969 Cumhuriyet</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">8 February 1969, Cumhuriyet</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-41-8-Subat-1969-Bugun.png" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-41-8-Subat-1969-Bugun.png" alt="8 Şubat 1969 Bugün" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-41-8-Subat-1969-Bugun.png" alt="8 February 1969, Bugün" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">8 Şubat 1969 Bugün</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">8 February 1969, Bugün</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-45-12-Subat-1969-Bugun.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-45-12-Subat-1969-Bugun.jpg" alt="12 Şubat 1969 Bugün — Beyazıt Kulesi manşeti" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-45-12-Subat-1969-Bugun.jpg" alt="12 February 1969, Bugün — Beyazıt Tower headline" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">12 Şubat 1969 Bugün — Beyazıt Kulesi manşeti</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">12 February 1969, Bugün — Beyazıt Tower headline</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-46-Kizil-Bayrak-Provokasyonu-Kolaj.png" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-46-Kizil-Bayrak-Provokasyonu-Kolaj.png" alt="Bugün — Kızıl bayrak haberleri" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-46-Kizil-Bayrak-Provokasyonu-Kolaj.png" alt="Bugün — Red flag reports" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Bugün — Kızıl bayrak haberleri</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">Bugün — Red flag reports</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-43-12-Subat-1969-Yeni-Istanbul.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-43-12-Subat-1969-Yeni-Istanbul.jpg" alt="12 Şubat 1969 Yeni İstanbul" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-43-12-Subat-1969-Yeni-Istanbul.jpg" alt="12 February 1969, Yeni İstanbul" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">12 Şubat 1969 Yeni İstanbul</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">12 February 1969, Yeni İstanbul</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-49-13-Subat-1969-Bugun-1.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-49-13-Subat-1969-Bugun-1.jpg" alt="13 Şubat 1969 Bugün" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-49-13-Subat-1969-Bugun-1.jpg" alt="13 February 1969, Bugün" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">13 Şubat 1969 Bugün</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">13 February 1969, Bugün</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-50-14-Subat-1969-Bugun.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-50-14-Subat-1969-Bugun.jpg" alt="14 Şubat 1969 Bugün — Son İhtar" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-50-14-Subat-1969-Bugun.jpg" alt="14 February 1969, Bugün — Final Warning" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">14 Şubat 1969 Bugün — Son İhtar</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">14 February 1969, Bugün — Final Warning</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-51-15-Subat-1969-Babialide-Sabah.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-51-15-Subat-1969-Babialide-Sabah.jpg" alt="15 Şubat 1969 Babıali'de Sabah" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-51-15-Subat-1969-Babialide-Sabah.jpg" alt="15 February 1969, Babıali'de Sabah" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">15 Şubat 1969 Babıali'de Sabah</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">15 February 1969, Babıali'de Sabah</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-52-15-Subat-1969-Son-Havadis.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-52-15-Subat-1969-Son-Havadis.jpg" alt="15 Şubat 1969 Son Havadis" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-52-15-Subat-1969-Son-Havadis.jpg" alt="15 February 1969, Son Havadis" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">15 Şubat 1969 Son Havadis</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">15 February 1969, Son Havadis</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-53-15-Subat-1969-Yeni-Istanbul.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-53-15-Subat-1969-Yeni-Istanbul.jpg" alt="15 Şubat 1969 Yeni İstanbul — Dev-Genç amblemi" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-53-15-Subat-1969-Yeni-Istanbul.jpg" alt="15 February 1969, Yeni İstanbul — Dev-Genç emblem" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">15 Şubat 1969 Yeni İstanbul — Dev-Genç amblemi</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">15 February 1969, Yeni İstanbul — Dev-Genç emblem</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-54-16-Subat-1969-Yeni-Istanbul-Komer.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-54-16-Subat-1969-Yeni-Istanbul-Komer.jpg" alt="16 Şubat 1969 Yeni İstanbul" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-54-16-Subat-1969-Yeni-Istanbul-Komer.jpg" alt="16 February 1969, Yeni İstanbul" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">16 Şubat 1969 Yeni İstanbul</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">16 February 1969, Yeni İstanbul</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-64-17-Subat-1969-Milliyet-6-Filo-Namaz.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-64-17-Subat-1969-Milliyet-6-Filo-Namaz.jpg" alt="17 Şubat 1969 Milliyet — Dolmabahçe namazı" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-64-17-Subat-1969-Milliyet-6-Filo-Namaz.jpg" alt="17 February 1969, Milliyet — Dolmabahçe prayer" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">17 Şubat 1969 Milliyet — Dolmabahçe namazı</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">17 February 1969, Milliyet — Dolmabahçe prayer</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
@@ -1053,8 +1053,8 @@
       <a href="/wp-content/uploads/2026/04/Resim-65-17-Subat-1969-Son-Havadis-1.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
         <img src="/wp-content/uploads/2026/04/Resim-65-17-Subat-1969-Son-Havadis-1.jpg" alt="17 Şubat 1969 Son Havadis" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">17 Şubat 1969 Son Havadis (1)</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">17 February 1969, Son Havadis (1)</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
@@ -1063,108 +1063,108 @@
       <a href="/wp-content/uploads/2026/04/Resim-66-17-Subat-1969-Son-Havadis-2.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
         <img src="/wp-content/uploads/2026/04/Resim-66-17-Subat-1969-Son-Havadis-2.jpg" alt="17 Şubat 1969 Son Havadis" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">17 Şubat 1969 Son Havadis (2)</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">17 February 1969, Son Havadis (2)</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-68-17-Subat-1969-Yeni-Istanbul.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-68-17-Subat-1969-Yeni-Istanbul.jpg" alt="17 Şubat 1969 Yeni İstanbul" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-68-17-Subat-1969-Yeni-Istanbul.jpg" alt="17 February 1969, Yeni İstanbul" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">17 Şubat 1969 Yeni İstanbul</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">17 February 1969, Yeni İstanbul</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-69-17-Subat-1969-Milliyet.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-69-17-Subat-1969-Milliyet.jpg" alt="17 Şubat 1969 Milliyet — Taksim girişi" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-69-17-Subat-1969-Milliyet.jpg" alt="17 February 1969, Milliyet — Entering Taksim" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">17 Şubat 1969 Milliyet — Taksim girişi</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">17 February 1969, Milliyet — Entering Taksim</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-74-17-Subat-1969-Hurriyet.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-74-17-Subat-1969-Hurriyet.jpg" alt="17 Şubat 1969 Hürriyet — Gaz bombaları" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-74-17-Subat-1969-Hurriyet.jpg" alt="17 February 1969, Hürriyet — Tear gas" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">17 Şubat 1969 Hürriyet — Gaz bombaları</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">17 February 1969, Hürriyet — Tear gas</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-75-17-Subat-1969-Hurriyet.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-75-17-Subat-1969-Hurriyet.jpg" alt="17 Şubat 1969 Hürriyet" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-75-17-Subat-1969-Hurriyet.jpg" alt="17 February 1969, Hürriyet" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">17 Şubat 1969 Hürriyet</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">17 February 1969, Hürriyet</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-76-17-Subat-1969-Ali-Turgut-Aytac.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-76-17-Subat-1969-Ali-Turgut-Aytac.jpg" alt="17 Şubat 1969 Günaydın — Ali Turgut Aytaç" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-76-17-Subat-1969-Ali-Turgut-Aytac.jpg" alt="17 February 1969, Günaydın — Ali Turgut Aytaç" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">17 Şubat 1969 Günaydın — Ali Turgut Aytaç</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">17 February 1969, Günaydın — Ali Turgut Aytaç</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-77-17-Subat-1969-Gunaydin.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-77-17-Subat-1969-Gunaydin.jpg" alt="17 Şubat 1969 Günaydın — Linç" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-77-17-Subat-1969-Gunaydin.jpg" alt="17 February 1969, Günaydın — Lynching" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">17 Şubat 1969 Günaydın — Linç</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">17 February 1969, Günaydın — Lynching</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-78-17-Subat-1969-Milliyet-Duran-Erdogan.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-78-17-Subat-1969-Milliyet-Duran-Erdogan.jpg" alt="17 Şubat 1969 Milliyet — Duran Erdoğan" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-78-17-Subat-1969-Milliyet-Duran-Erdogan.jpg" alt="17 February 1969, Milliyet — Duran Erdoğan" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">17 Şubat 1969 Milliyet — Duran Erdoğan</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">17 February 1969, Milliyet — Duran Erdoğan</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-80-17-Subat-1969-Bugun.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-80-17-Subat-1969-Bugun.jpg" alt="17 Şubat 1969 Bugün — Manşet" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-80-17-Subat-1969-Bugun.jpg" alt="17 February 1969, Bugün — Headline" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">17 Şubat 1969 Bugün — Manşet</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">17 February 1969, Bugün — Headline</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-79-18-Subat-1969-Yeni-Istanbul.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-79-18-Subat-1969-Yeni-Istanbul.jpg" alt="18 Şubat 1969 Yeni İstanbul" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-79-18-Subat-1969-Yeni-Istanbul.jpg" alt="18 February 1969, Yeni İstanbul" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">18 Şubat 1969 Yeni İstanbul</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">18 February 1969, Yeni İstanbul</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-82-18-Subat-1969-Cumhuriyet.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-82-18-Subat-1969-Cumhuriyet.jpg" alt="18 Şubat 1969 Cumhuriyet" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-82-18-Subat-1969-Cumhuriyet.jpg" alt="18 February 1969, Cumhuriyet" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">18 Şubat 1969 Cumhuriyet</span>
-          <span class="kp-masonry-bolum-tag">Bölüm 4</span>
+          <span class="kp-masonry-caption">18 February 1969, Cumhuriyet</span>
+          <span class="kp-masonry-bolum-tag">Ch. 4</span>
         </div>
       </a>
     </div>
@@ -1175,16 +1175,16 @@
 <!-- BÖLÜM 4 — SONRADAN EKLENENLER -->
 <section class="kp-medya-bolum" id="bolum-4-guncel" data-bolum="4">
   <div class="kp-medya-bolum-baslik">
-    <span class="kp-medya-bolum-etiket" style="background:#FFF8ED;color:#BA7517;border-color:#EFD9B0;">Bölüm 4 — Güncel</span>
-    <h5 class="kp-sec-label">Sonradan Eklenenler</h5>
+    <span class="kp-medya-bolum-etiket" style="background:#FFF8ED;color:#BA7517;border-color:#EFD9B0;">Chapter 4 — Recent</span>
+    <h5 class="kp-sec-label">Recently Added</h5>
   </div>
   <div class="kp-masonry">
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-42-10-Subat-1969-Ekspres.png" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-42-10-Subat-1969-Ekspres.png" alt="10 Şubat 1969 Ekspres" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-42-10-Subat-1969-Ekspres.png" alt="10 February 1969, Ekspres" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">10 Şubat 1969 Ekspres</span>
+          <span class="kp-masonry-caption">10 February 1969, Ekspres</span>
           <span class="kp-masonry-bolum-tag">📎 5 Nisan 2026</span>
         </div>
       </a>
@@ -1192,9 +1192,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-58-11-Subat-1969-Cumhuriyet.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-58-11-Subat-1969-Cumhuriyet.jpg" alt="11 Şubat 1969 Cumhuriyet" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-58-11-Subat-1969-Cumhuriyet.jpg" alt="11 February 1969, Cumhuriyet" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">11 Şubat 1969 Cumhuriyet</span>
+          <span class="kp-masonry-caption">11 February 1969, Cumhuriyet</span>
           <span class="kp-masonry-bolum-tag">📎 5 Nisan 2026</span>
         </div>
       </a>
@@ -1202,9 +1202,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-57-11-Subat-1969-Ekspres.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-57-11-Subat-1969-Ekspres.jpg" alt="11 Şubat 1969 Ekspres" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-57-11-Subat-1969-Ekspres.jpg" alt="11 February 1969, Ekspres" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">11 Şubat 1969 Ekspres</span>
+          <span class="kp-masonry-caption">11 February 1969, Ekspres</span>
           <span class="kp-masonry-bolum-tag">📎 5 Nisan 2026</span>
         </div>
       </a>
@@ -1212,9 +1212,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-56-11-Subat-1969-Bugun.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-56-11-Subat-1969-Bugun.jpg" alt="11 Şubat 1969 Bugün" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-56-11-Subat-1969-Bugun.jpg" alt="11 February 1969, Bugün" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">11 Şubat 1969 Bugün</span>
+          <span class="kp-masonry-caption">11 February 1969, Bugün</span>
           <span class="kp-masonry-bolum-tag">📎 5 Nisan 2026</span>
         </div>
       </a>
@@ -1222,9 +1222,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-59-En-Son-Dakika-Haber-Taksime-Yuruyen-Kitle.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-59-En-Son-Dakika-Haber-Taksime-Yuruyen-Kitle.jpg" alt="12 Şubat 1969 — Taksim'e yürüyen kitle" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-59-En-Son-Dakika-Haber-Taksime-Yuruyen-Kitle.jpg" alt="12 February 1969 — The crowd marching to Taksim" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">12 Şubat 1969 — Taksim'e yürüyen kitle</span>
+          <span class="kp-masonry-caption">12 February 1969 — The crowd marching to Taksim</span>
           <span class="kp-masonry-bolum-tag">📎 5 Nisan 2026</span>
         </div>
       </a>
@@ -1232,9 +1232,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-60-13-Subat-1969-Cumhuriyet.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-60-13-Subat-1969-Cumhuriyet.jpg" alt="13 Şubat 1969 Cumhuriyet" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-60-13-Subat-1969-Cumhuriyet.jpg" alt="13 February 1969, Cumhuriyet" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">13 Şubat 1969 Cumhuriyet</span>
+          <span class="kp-masonry-caption">13 February 1969, Cumhuriyet</span>
           <span class="kp-masonry-bolum-tag">📎 5 Nisan 2026</span>
         </div>
       </a>
@@ -1242,9 +1242,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-61-14-Subat-1969-Yeni-Istanbul.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-61-14-Subat-1969-Yeni-Istanbul.jpg" alt="14 Şubat 1969 Yeni İstanbul" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-61-14-Subat-1969-Yeni-Istanbul.jpg" alt="14 February 1969, Yeni İstanbul" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">14 Şubat 1969 Yeni İstanbul</span>
+          <span class="kp-masonry-caption">14 February 1969, Yeni İstanbul</span>
           <span class="kp-masonry-bolum-tag">📎 5 Nisan 2026</span>
         </div>
       </a>
@@ -1252,9 +1252,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-62-Bugun-Cihad-Hazir-Olunuz.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-62-Bugun-Cihad-Hazir-Olunuz.jpg" alt="16 Şubat 1969 Bugün — Cihada hazır olunuz" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-62-Bugun-Cihad-Hazir-Olunuz.jpg" alt="16 February 1969, Bugün — Be ready for jihad" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">16 Şubat 1969 Bugün — Cihada hazır olunuz</span>
+          <span class="kp-masonry-caption">16 February 1969, Bugün — Be ready for jihad</span>
           <span class="kp-masonry-bolum-tag">📎 5 Nisan 2026</span>
         </div>
       </a>
@@ -1262,9 +1262,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-63-Bugun-Kizillari-Bogmanin-Vakti-Geldi.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-63-Bugun-Kizillari-Bogmanin-Vakti-Geldi.jpg" alt="15 Şubat 1969 Bugün — Kızılları boğmanın vakti" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-63-Bugun-Kizillari-Bogmanin-Vakti-Geldi.jpg" alt="15 February 1969, Bugün — The time to strangle the Reds" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">15 Şubat 1969 Bugün — Kızılları boğmanın vakti</span>
+          <span class="kp-masonry-caption">15 February 1969, Bugün — The time to strangle the Reds</span>
           <span class="kp-masonry-bolum-tag">📎 5 Nisan 2026</span>
         </div>
       </a>
@@ -1272,9 +1272,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-73-19-Subat-1969-Gunaydin-Yaralilar-Konusuyor.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-73-19-Subat-1969-Gunaydin-Yaralilar-Konusuyor.jpg" alt="19 Şubat 1969 Günaydın — Yaralılar konuşuyor" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-73-19-Subat-1969-Gunaydin-Yaralilar-Konusuyor.jpg" alt="19 February 1969, Günaydın — The wounded speak" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">19 Şubat 1969 Günaydın — Yaralılar konuşuyor</span>
+          <span class="kp-masonry-caption">19 February 1969, Günaydın — The wounded speak</span>
           <span class="kp-masonry-bolum-tag">📎 5 Nisan 2026</span>
         </div>
       </a>
@@ -1282,9 +1282,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-70-17-Subat-1969-Gunaydin.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-70-17-Subat-1969-Gunaydin.jpg" alt="17 Şubat 1969 Günaydın — Saldırı başlıyor" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-70-17-Subat-1969-Gunaydin.jpg" alt="17 February 1969, Günaydın — The attack begins" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">17 Şubat 1969 Günaydın — Saldırı başlıyor</span>
+          <span class="kp-masonry-caption">17 February 1969, Günaydın — The attack begins</span>
           <span class="kp-masonry-bolum-tag">📎 5 Nisan 2026</span>
         </div>
       </a>
@@ -1292,9 +1292,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-81-11-Subat-1969-Cumhuriyet.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-81-11-Subat-1969-Cumhuriyet.jpg" alt="11 Şubat 1969 Cumhuriyet (son)" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-81-11-Subat-1969-Cumhuriyet.jpg" alt="11 February 1969, Cumhuriyet (2)" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">11 Şubat 1969 Cumhuriyet (son)</span>
+          <span class="kp-masonry-caption">11 February 1969, Cumhuriyet (2)</span>
           <span class="kp-masonry-bolum-tag">📎 5 Nisan 2026</span>
         </div>
       </a>
@@ -1302,9 +1302,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-83-23-Subat-1969-Cumhuriyet.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-83-23-Subat-1969-Cumhuriyet.jpg" alt="23 Şubat 1969 Cumhuriyet" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-83-23-Subat-1969-Cumhuriyet.jpg" alt="23 February 1969, Cumhuriyet" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">23 Şubat 1969 Cumhuriyet</span>
+          <span class="kp-masonry-caption">23 February 1969, Cumhuriyet</span>
           <span class="kp-masonry-bolum-tag">📎 5 Nisan 2026</span>
         </div>
       </a>
@@ -1316,20 +1316,20 @@
      <!-- BÖLÜM 5 — SONRADAN EKLENENLER -->
 <section class="kp-medya-bolum" id="bolum-5" data-bolum="5">
   <div class="kp-medya-bolum-baslik">
-    <span class="kp-medya-bolum-etiket">Bölüm 5</span>
-    <h2 class="kp-medya-bolum-h2">Kanlı Pazar'ın Ardından Söylenenler</h2>
+    <span class="kp-medya-bolum-etiket">Chapter 5</span>
+    <h2 class="kp-medya-bolum-h2">What Was Said After Kanlı Pazar</h2>
   </div>
-  <p style="font-size:13px;color:#aaa;font-style:italic;">Bölüm 5'te kitaba ait fotoğraf bulunmamaktadır.</p>
+  <p style="font-size:13px;color:#aaa;font-style:italic;">There are no photographs from the book in Chapter 5.</p>
 
   <div class="kp-medya-bolum-baslik" id="bolum-5-guncel">
-    <span class="kp-medya-bolum-etiket" style="background:#FFF8ED;color:#BA7517;border-color:#EFD9B0;">Bölüm 5 — Güncel</span>
-    <h5 class="kp-sec-label">Sonradan Eklenenler</h5>
+    <span class="kp-medya-bolum-etiket" style="background:#FFF8ED;color:#BA7517;border-color:#EFD9B0;">Chapter 5 — Recent</span>
+    <h5 class="kp-sec-label">Recently Added</h5>
   </div>
   <div class="kp-masonry">
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-85-17-Subat-1969-Babialide-Sabah.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-85-17-Subat-1969-Babialide-Sabah.jpg" alt="17 Şubat 1969, Babıali'de Sabah" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-85-17-Subat-1969-Babialide-Sabah.jpg" alt="17 February 1969, Babıali'de Sabah" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
           <span class="kp-masonry-caption">17 Şubat 1969 Babıali'de Sabah</span>
           <span class="kp-masonry-bolum-tag">📎 Nisan 2026</span>
@@ -1339,9 +1339,9 @@
 
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/04/Resim-84-23-Subat-1969-Bugun.jpg" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/04/Resim-84-23-Subat-1969-Bugun.jpg" alt="23 Şubat 1969 Bugün — Vali Poyraz açıklaması" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/04/Resim-84-23-Subat-1969-Bugun.jpg" alt="23 February 1969, Bugün — Governor Poyraz's statement" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">23 Şubat 1969 Bugün — Vali Poyraz açıklaması</span>
+          <span class="kp-masonry-caption">23 February 1969, Bugün — Governor Poyraz's statement</span>
           <span class="kp-masonry-bolum-tag">📎 Nisan 2026</span>
         </div>
       </a>
@@ -1354,21 +1354,21 @@
 <!-- BÖLÜM 6 — SONRADAN EKLENENLER -->
 <section class="kp-medya-bolum" id="bolum-6" data-bolum="6">
   <div class="kp-medya-bolum-baslik">
-    <span class="kp-medya-bolum-etiket">Bölüm 6</span>
-    <h2 class="kp-medya-bolum-h2">Yıllar Sonra Kanlı Pazar</h2>
+    <span class="kp-medya-bolum-etiket">Chapter 6</span>
+    <h2 class="kp-medya-bolum-h2">Kanlı Pazar, Years Later</h2>
   </div>
-  <p style="font-size:13px;color:#aaa;font-style:italic;">Bölüm 6'da kitaba ait fotoğraf bulunmamaktadır.</p>
+  <p style="font-size:13px;color:#aaa;font-style:italic;">There are no photographs from the book in Chapter 6.</p>
 
   <div class="kp-medya-bolum-baslik" id="bolum-6-guncel">
-    <span class="kp-medya-bolum-etiket" style="background:#FFF8ED;color:#BA7517;border-color:#EFD9B0;">Bölüm 6 — Güncel</span>
-    <h5 class="kp-sec-label">Sonradan Eklenenler</h5>
+    <span class="kp-medya-bolum-etiket" style="background:#FFF8ED;color:#BA7517;border-color:#EFD9B0;">Chapter 6 — Recent</span>
+    <h5 class="kp-sec-label">Recently Added</h5>
   </div>
   <div class="kp-masonry">
     <div class="kp-masonry-item">
       <a href="/wp-content/uploads/2026/05/kanli-pazar-eygi-ozel-harp-pekin.png" target="_blank" rel="noopener" class="kp-masonry-link">
-        <img src="/wp-content/uploads/2026/05/kanli-pazar-eygi-ozel-harp-pekin.png" alt="Eygi ve Gülen — Özel Harp Dairesi iddiası, Tele 1, 2018" class="kp-masonry-img" loading="lazy">
+        <img src="/wp-content/uploads/2026/05/kanli-pazar-eygi-ozel-harp-pekin.png" alt="Eygi and Gülen — the Special Warfare Department claim, Tele 1, 2018" class="kp-masonry-img" loading="lazy">
         <div class="kp-masonry-overlay">
-          <span class="kp-masonry-caption">Eygi ve Gülen — Özel Harp Dairesi iddiası, Tele 1, 2018</span>
+          <span class="kp-masonry-caption">Eygi and Gülen — the Special Warfare Department claim, Tele 1, 2018</span>
           <span class="kp-masonry-bolum-tag">📎 Mayıs 2026</span>
         </div>
       </a>
@@ -1400,60 +1400,60 @@ function filterMedya(bolum, btn) {
     <div class="kp-bolum-sidebar">
 
       <div class="kp-sb-card">
-  <div class="kp-sb-title">BU SAYFADA</div>
-<a href="#giris-guncel" class="kp-toc-item"><span>Giriş Fotoğrafları</span></a>
-<a href="#giris-guncel-baslik" class="kp-toc-item" style="color:#BA7517;padding-left:20px;font-size:12px;"><span>↳ Sonradan eklenenler</span></a>
-  <a href="#bolum-1" class="kp-toc-item"><span>Bölüm 1 Fotoğrafları</span></a>
-  <a href="#bolum-1-guncel" class="kp-toc-item" style="color:#BA7517;padding-left:20px;font-size:12px;"><span>↳ Sonradan eklenenler</span></a>
-  <a href="#bolum-2" class="kp-toc-item"><span>Bölüm 2 Fotoğrafları</span></a>
-  <a href="#bolum-2-guncel" class="kp-toc-item" style="color:#BA7517;padding-left:20px;font-size:12px;"><span>↳ Sonradan eklenenler</span></a>
-  <a href="#bolum-3" class="kp-toc-item"><span>Bölüm 3 Fotoğrafları</span></a>
-<a href="#bolum-3-guncel" class="kp-toc-item" style="color:#BA7517;padding-left:20px;font-size:12px;"><span>↳ Sonradan eklenenler</span></a>
-  <a href="#bolum-4" class="kp-toc-item"><span>Bölüm 4 Fotoğrafları</span></a>
-  <a href="#bolum-4-guncel" class="kp-toc-item" style="color:#BA7517;padding-left:20px;font-size:12px;"><span>↳ Sonradan eklenenler</span></a>
-  <a href="#bolum-5" class="kp-toc-item"><span>Bölüm 5 Fotoğrafları</span></a>
-  <a href="#bolum-5-guncel" class="kp-toc-item" style="color:#BA7517;padding-left:20px;font-size:12px;"><span>↳ Sonradan eklenenler</span></a>
-<a href="#bolum-6" class="kp-toc-item"><span>Bölüm 6 Fotoğrafları</span></a>
-<a href="#bolum-6-guncel" class="kp-toc-item" style="color:#BA7517;padding-left:20px;font-size:12px;"><span>↳ Sonradan eklenenler</span></a>
+  <div class="kp-sb-title">ON THIS PAGE</div>
+<a href="#giris-guncel" class="kp-toc-item"><span>Introduction Photographs</span></a>
+<a href="#giris-guncel-baslik" class="kp-toc-item" style="color:#BA7517;padding-left:20px;font-size:12px;"><span>↳ Recently added</span></a>
+  <a href="#bolum-1" class="kp-toc-item"><span>Chapter 1 Photographs</span></a>
+  <a href="#bolum-1-guncel" class="kp-toc-item" style="color:#BA7517;padding-left:20px;font-size:12px;"><span>↳ Recently added</span></a>
+  <a href="#bolum-2" class="kp-toc-item"><span>Chapter 2 Photographs</span></a>
+  <a href="#bolum-2-guncel" class="kp-toc-item" style="color:#BA7517;padding-left:20px;font-size:12px;"><span>↳ Recently added</span></a>
+  <a href="#bolum-3" class="kp-toc-item"><span>Chapter 3 Photographs</span></a>
+<a href="#bolum-3-guncel" class="kp-toc-item" style="color:#BA7517;padding-left:20px;font-size:12px;"><span>↳ Recently added</span></a>
+  <a href="#bolum-4" class="kp-toc-item"><span>Chapter 4 Photographs</span></a>
+  <a href="#bolum-4-guncel" class="kp-toc-item" style="color:#BA7517;padding-left:20px;font-size:12px;"><span>↳ Recently added</span></a>
+  <a href="#bolum-5" class="kp-toc-item"><span>Chapter 5 Photographs</span></a>
+  <a href="#bolum-5-guncel" class="kp-toc-item" style="color:#BA7517;padding-left:20px;font-size:12px;"><span>↳ Recently added</span></a>
+<a href="#bolum-6" class="kp-toc-item"><span>Chapter 6 Photographs</span></a>
+<a href="#bolum-6-guncel" class="kp-toc-item" style="color:#BA7517;padding-left:20px;font-size:12px;"><span>↳ Recently added</span></a>
 </div>
 
       <div class="kp-sb-card">
-        <div class="kp-sb-title">KİTAP BÖLÜMLERİ</div>
-        <a href="/onsoz/" class="kp-ch-list-item">
-          <span class="kp-ch-list-badge">Önsöz</span>
-          <span class="kp-ch-list-title">Önsöz</span>
+        <div class="kp-sb-title">BOOK CHAPTERS</div>
+        <a href="/en/preface/" class="kp-ch-list-item">
+          <span class="kp-ch-list-badge">Preface</span>
+          <span class="kp-ch-list-title">Preface</span>
         </a>
-        <a href="/giris/" class="kp-ch-list-item">
-          <span class="kp-ch-list-badge">Giriş</span>
-          <span class="kp-ch-list-title">16 Şubat 1969'a Giden Yol</span>
+        <a href="/en/introduction/" class="kp-ch-list-item">
+          <span class="kp-ch-list-badge">Introduction</span>
+          <span class="kp-ch-list-title">The Road to 16 February 1969</span>
         </a>
-        <a href="/bolum-1/" class="kp-ch-list-item">
-          <span class="kp-ch-list-badge">Böl. 1</span>
-          <span class="kp-ch-list-title">27 Mayıs 1960 Sonrası Politik Ortam</span>
+        <a href="/en/chapter-1/" class="kp-ch-list-item">
+          <span class="kp-ch-list-badge">Ch. 1</span>
+          <span class="kp-ch-list-title">The Political Climate After 27 May 1960</span>
         </a>
         <a href="/bolum-2/" class="kp-ch-list-item">
-          <span class="kp-ch-list-badge">Böl. 2</span>
-          <span class="kp-ch-list-title">Kanlı Pazar'a Doğru</span>
+          <span class="kp-ch-list-badge">Ch. 2</span>
+          <span class="kp-ch-list-title">Toward Kanlı Pazar</span>
         </a>
-        <a href="/bolum-3/" class="kp-ch-list-item">
-          <span class="kp-ch-list-badge">Böl. 3</span>
-          <span class="kp-ch-list-title">Bugün Gazetesi ve "Kanlı Pazar"</span>
+        <a href="/en/chapter-3/" class="kp-ch-list-item">
+          <span class="kp-ch-list-badge">Ch. 3</span>
+          <span class="kp-ch-list-title"><em>Bugün</em> Newspaper and "Kanlı Pazar"</span>
         </a>
-        <a href="/bolum-4/" class="kp-ch-list-item">
-          <span class="kp-ch-list-badge" style="background:#BA751711;color:#BA7517;">Odak</span>
-          <span class="kp-ch-list-title">Adım Adım Kanlı Pazar</span>
+        <a href="/en/chapter-4/" class="kp-ch-list-item">
+          <span class="kp-ch-list-badge" style="background:#BA751711;color:#BA7517;">Central Chapter</span>
+          <span class="kp-ch-list-title">Kanlı Pazar: A Step-by-Step Account</span>
         </a>
-        <a href="/bolum-5/" class="kp-ch-list-item">
-          <span class="kp-ch-list-badge">Böl. 5</span>
-          <span class="kp-ch-list-title">Kanlı Pazar'ın Ardından</span>
+        <a href="/en/chapter-5/" class="kp-ch-list-item">
+          <span class="kp-ch-list-badge">Ch. 5</span>
+          <span class="kp-ch-list-title">What Was Said After Kanlı Pazar</span>
         </a>
-        <a href="/bolum-6/" class="kp-ch-list-item">
-          <span class="kp-ch-list-badge">Böl. 6</span>
-          <span class="kp-ch-list-title">Yıllar Sonra Kanlı Pazar</span>
+        <a href="/en/chapter-6/" class="kp-ch-list-item">
+          <span class="kp-ch-list-badge">Ch. 6</span>
+          <span class="kp-ch-list-title">Kanlı Pazar, Years Later</span>
         </a>
-        <a href="/sonsoz/" class="kp-ch-list-item">
-          <span class="kp-ch-list-badge">Sonsöz</span>
-          <span class="kp-ch-list-title">Sonsöz</span>
+        <a href="/en/afterword/" class="kp-ch-list-item">
+          <span class="kp-ch-list-badge">Afterword</span>
+          <span class="kp-ch-list-title">Afterword</span>
         </a>
       </div>
 
