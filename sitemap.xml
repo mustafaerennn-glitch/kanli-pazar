@@ -1,22 +1,252 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://kanlipazar.net/</loc></url>
-  <url><loc>https://kanlipazar.net/onsoz/</loc></url>
-  <url><loc>https://kanlipazar.net/giris/</loc></url>
-  <url><loc>https://kanlipazar.net/bolum-1/</loc></url>
-  <url><loc>https://kanlipazar.net/bolum-2/</loc></url>
-  <url><loc>https://kanlipazar.net/bolum-3/</loc></url>
-  <url><loc>https://kanlipazar.net/bolum-4/</loc></url>
-  <url><loc>https://kanlipazar.net/bolum-5/</loc></url>
-  <url><loc>https://kanlipazar.net/bolum-6/</loc></url>
-  <url><loc>https://kanlipazar.net/sonsoz/</loc></url>
-  <url><loc>https://kanlipazar.net/kitap/</loc></url>
-  <url><loc>https://kanlipazar.net/medya/</loc></url>
-  <url><loc>https://kanlipazar.net/guncellemeler/</loc></url>
-  <url><loc>https://kanlipazar.net/gorusler/</loc></url>
-  <url><loc>https://kanlipazar.net/kaynakca/</loc></url>
-  <url><loc>https://kanlipazar.net/iletisim/</loc></url>
-  <url><loc>https://kanlipazar.net/yorumlar/</loc></url>
-  <url><loc>https://kanlipazar.net/okuyucu-rehberi/</loc></url>
-  <url><loc>https://kanlipazar.net/arama/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://kanlipazar.net/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/"/>
+  </url>
+  <url>
+    <loc>https://kanlipazar.net/en/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/"/>
+  </url>
+
+  <url>
+    <loc>https://kanlipazar.net/onsoz/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/onsoz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/preface/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/onsoz/"/>
+  </url>
+  <url>
+    <loc>https://kanlipazar.net/en/preface/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/onsoz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/preface/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/onsoz/"/>
+  </url>
+
+  <url>
+    <loc>https://kanlipazar.net/giris/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/giris/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/introduction/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/giris/"/>
+  </url>
+  <url>
+    <loc>https://kanlipazar.net/en/introduction/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/giris/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/introduction/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/giris/"/>
+  </url>
+
+  <url>
+    <loc>https://kanlipazar.net/bolum-1/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/bolum-1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/chapter-1/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/bolum-1/"/>
+  </url>
+  <url>
+    <loc>https://kanlipazar.net/en/chapter-1/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/bolum-1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/chapter-1/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/bolum-1/"/>
+  </url>
+
+  <url>
+    <loc>https://kanlipazar.net/bolum-2/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/bolum-2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/chapter-2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/bolum-2/"/>
+  </url>
+  <url>
+    <loc>https://kanlipazar.net/en/chapter-2/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/bolum-2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/chapter-2/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/bolum-2/"/>
+  </url>
+
+  <url>
+    <loc>https://kanlipazar.net/bolum-3/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/bolum-3/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/chapter-3/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/bolum-3/"/>
+  </url>
+  <url>
+    <loc>https://kanlipazar.net/en/chapter-3/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/bolum-3/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/chapter-3/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/bolum-3/"/>
+  </url>
+
+  <url>
+    <loc>https://kanlipazar.net/bolum-4/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/bolum-4/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/chapter-4/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/bolum-4/"/>
+  </url>
+  <url>
+    <loc>https://kanlipazar.net/en/chapter-4/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/bolum-4/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/chapter-4/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/bolum-4/"/>
+  </url>
+
+  <url>
+    <loc>https://kanlipazar.net/bolum-5/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/bolum-5/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/chapter-5/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/bolum-5/"/>
+  </url>
+  <url>
+    <loc>https://kanlipazar.net/en/chapter-5/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/bolum-5/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/chapter-5/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/bolum-5/"/>
+  </url>
+
+  <url>
+    <loc>https://kanlipazar.net/bolum-6/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/bolum-6/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/chapter-6/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/bolum-6/"/>
+  </url>
+  <url>
+    <loc>https://kanlipazar.net/en/chapter-6/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/bolum-6/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/chapter-6/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/bolum-6/"/>
+  </url>
+
+  <url>
+    <loc>https://kanlipazar.net/sonsoz/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/sonsoz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/afterword/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/sonsoz/"/>
+  </url>
+  <url>
+    <loc>https://kanlipazar.net/en/afterword/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/sonsoz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/afterword/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/sonsoz/"/>
+  </url>
+
+  <url>
+    <loc>https://kanlipazar.net/kitap/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/kitap/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/book/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/kitap/"/>
+  </url>
+  <url>
+    <loc>https://kanlipazar.net/en/book/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/kitap/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/book/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/kitap/"/>
+  </url>
+
+  <url>
+    <loc>https://kanlipazar.net/medya/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/medya/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/media/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/medya/"/>
+  </url>
+  <url>
+    <loc>https://kanlipazar.net/en/media/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/medya/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/media/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/medya/"/>
+  </url>
+
+  <url>
+    <loc>https://kanlipazar.net/guncellemeler/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/guncellemeler/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/updates/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/guncellemeler/"/>
+  </url>
+  <url>
+    <loc>https://kanlipazar.net/en/updates/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/guncellemeler/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/updates/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/guncellemeler/"/>
+  </url>
+
+  <url>
+    <loc>https://kanlipazar.net/gorusler/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/gorusler/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/reviews/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/gorusler/"/>
+  </url>
+  <url>
+    <loc>https://kanlipazar.net/en/reviews/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/gorusler/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/reviews/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/gorusler/"/>
+  </url>
+
+  <url>
+    <loc>https://kanlipazar.net/kaynakca/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/kaynakca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/bibliography/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/kaynakca/"/>
+  </url>
+  <url>
+    <loc>https://kanlipazar.net/en/bibliography/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/kaynakca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/bibliography/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/kaynakca/"/>
+  </url>
+
+  <url>
+    <loc>https://kanlipazar.net/iletisim/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/iletisim/"/>
+  </url>
+  <url>
+    <loc>https://kanlipazar.net/en/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/iletisim/"/>
+  </url>
+
+  <url>
+    <loc>https://kanlipazar.net/yorumlar/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/yorumlar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/comments/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/yorumlar/"/>
+  </url>
+  <url>
+    <loc>https://kanlipazar.net/en/comments/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/yorumlar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/comments/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/yorumlar/"/>
+  </url>
+
+  <url>
+    <loc>https://kanlipazar.net/okuyucu-rehberi/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/okuyucu-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/reader-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/okuyucu-rehberi/"/>
+  </url>
+  <url>
+    <loc>https://kanlipazar.net/en/reader-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/okuyucu-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/reader-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/okuyucu-rehberi/"/>
+  </url>
+
+  <url>
+    <loc>https://kanlipazar.net/arama/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/arama/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/search/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/arama/"/>
+  </url>
+  <url>
+    <loc>https://kanlipazar.net/en/search/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kanlipazar.net/arama/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanlipazar.net/en/search/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanlipazar.net/arama/"/>
+  </url>
+
 </urlset>
